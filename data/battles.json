@@ -1,0 +1,4807 @@
+{
+  "sample": true,
+  "updatedAt": "2026-10-25T09:57:15.465Z",
+  "count": 160,
+  "battles": [
+    {
+      "id": "demo-159",
+      "account": "conta1",
+      "date": "2026-10-25T06:40:19.393Z",
+      "type": "Ranked",
+      "stage": "Urban Square",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1799,
+        "ratingChange": 7,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "AcreMishima",
+        "polarisId": "opp199622",
+        "charId": 44,
+        "char": "Armor King",
+        "danId": 20,
+        "dan": "Battle Ruler",
+        "rating": 1871,
+        "ratingChange": -7,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-158",
+      "account": "conta1",
+      "date": "2026-10-25T03:13:47.238Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1817,
+        "ratingChange": -18,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "Ghost_88",
+        "polarisId": "opp148748",
+        "charId": 44,
+        "char": "Armor King",
+        "danId": 20,
+        "dan": "Battle Ruler",
+        "rating": 1736,
+        "ratingChange": 18,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-157",
+      "account": "conta1",
+      "date": "2026-10-25T00:11:07.150Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1810,
+        "ratingChange": 7,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "NorteKing",
+        "polarisId": "opp42076",
+        "charId": 28,
+        "char": "Zafina",
+        "danId": 21,
+        "dan": "Fujin",
+        "rating": 1764,
+        "ratingChange": -7,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-156",
+      "account": "conta1",
+      "date": "2026-10-24T21:06:20.947Z",
+      "type": "Ranked",
+      "stage": "Yakushima",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1820,
+        "ratingChange": -10,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "iWS2enjoyer",
+        "polarisId": "opp565140",
+        "charId": 6,
+        "char": "Jin",
+        "danId": 22,
+        "dan": "Raijin",
+        "rating": 1821,
+        "ratingChange": 10,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-155",
+      "account": "conta1",
+      "date": "2026-10-24T17:29:54.855Z",
+      "type": "Ranked",
+      "stage": "Urban Square",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1805,
+        "ratingChange": 15,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "NorteKing",
+        "polarisId": "opp502915",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 23,
+        "dan": "Kishin",
+        "rating": 1891,
+        "ratingChange": -15,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-154",
+      "account": "conta2",
+      "date": "2026-10-24T14:45:10.957Z",
+      "type": "Quick",
+      "stage": "Arena",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoAlt00002",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 16,
+        "dan": "Shinryu",
+        "rating": 1450,
+        "ratingChange": -7,
+        "rounds": 2
+      },
+      "opp": {
+        "name": "Ghost_88",
+        "polarisId": "opp841516",
+        "charId": 4,
+        "char": "Hwoarang",
+        "danId": 22,
+        "dan": "Raijin",
+        "rating": 1866,
+        "ratingChange": 7,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-153",
+      "account": "conta1",
+      "date": "2026-10-24T12:00:34.444Z",
+      "type": "Ranked",
+      "stage": "Urban Square",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1787,
+        "ratingChange": 18,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "NorteKing",
+        "polarisId": "opp769297",
+        "charId": 1,
+        "char": "Law",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1695,
+        "ratingChange": -18,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-152",
+      "account": "conta1",
+      "date": "2026-10-24T09:03:58.266Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1801,
+        "ratingChange": -14,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "Kurogane",
+        "polarisId": "opp652490",
+        "charId": 21,
+        "char": "Nina",
+        "danId": 22,
+        "dan": "Raijin",
+        "rating": 1774,
+        "ratingChange": 14,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-151",
+      "account": "conta1",
+      "date": "2026-10-24T05:47:09.224Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1813,
+        "ratingChange": -12,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "Hellsweep",
+        "polarisId": "opp724201",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1894,
+        "ratingChange": 12,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-150",
+      "account": "conta1",
+      "date": "2026-10-24T02:57:05.243Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1798,
+        "ratingChange": 15,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "NorteKing",
+        "polarisId": "opp924318",
+        "charId": 28,
+        "char": "Zafina",
+        "danId": 20,
+        "dan": "Battle Ruler",
+        "rating": 1861,
+        "ratingChange": -15,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-149",
+      "account": "conta1",
+      "date": "2026-10-23T23:27:02.669Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1792,
+        "ratingChange": 6,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Hellsweep",
+        "polarisId": "opp857298",
+        "charId": 38,
+        "char": "Eddy",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1796,
+        "ratingChange": -6,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-148",
+      "account": "conta1",
+      "date": "2026-10-23T19:49:58.196Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1807,
+        "ratingChange": -15,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "Kurogane",
+        "polarisId": "opp172138",
+        "charId": 5,
+        "char": "Xiaoyu",
+        "danId": 20,
+        "dan": "Battle Ruler",
+        "rating": 1783,
+        "ratingChange": 15,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-147",
+      "account": "conta2",
+      "date": "2026-10-23T17:16:42.050Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoAlt00002",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 16,
+        "dan": "Shinryu",
+        "rating": 1450,
+        "ratingChange": 17,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "NorteKing",
+        "polarisId": "opp82855",
+        "charId": 44,
+        "char": "Armor King",
+        "danId": 23,
+        "dan": "Kishin",
+        "rating": 1834,
+        "ratingChange": -17,
+        "rounds": 2
+      }
+    },
+    {
+      "id": "demo-146",
+      "account": "conta1",
+      "date": "2026-10-23T13:50:14.451Z",
+      "type": "Ranked",
+      "stage": "Yakushima",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1797,
+        "ratingChange": 10,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Hellsweep",
+        "polarisId": "opp146415",
+        "charId": 36,
+        "char": "Raven",
+        "danId": 25,
+        "dan": "Tekken King",
+        "rating": 1841,
+        "ratingChange": -10,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-145",
+      "account": "conta1",
+      "date": "2026-10-23T10:52:47.460Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1784,
+        "ratingChange": 13,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "PanteraNegra",
+        "polarisId": "opp906078",
+        "charId": 6,
+        "char": "Jin",
+        "danId": 23,
+        "dan": "Kishin",
+        "rating": 1869,
+        "ratingChange": -13,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-144",
+      "account": "conta1",
+      "date": "2026-10-23T07:27:56.099Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1803,
+        "ratingChange": -19,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "AcreMishima",
+        "polarisId": "opp707241",
+        "charId": 0,
+        "char": "Paul",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1844,
+        "ratingChange": 19,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-143",
+      "account": "conta1",
+      "date": "2026-10-23T04:25:56.345Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1810,
+        "ratingChange": -7,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "BeloKazuya",
+        "polarisId": "opp458874",
+        "charId": 12,
+        "char": "Devil Jin",
+        "danId": 22,
+        "dan": "Raijin",
+        "rating": 1887,
+        "ratingChange": 7,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-142",
+      "account": "conta1",
+      "date": "2026-10-23T02:03:43.570Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1830,
+        "ratingChange": -20,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "Ghost_88",
+        "polarisId": "opp228565",
+        "charId": 0,
+        "char": "Paul",
+        "danId": 23,
+        "dan": "Kishin",
+        "rating": 1836,
+        "ratingChange": 20,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-141",
+      "account": "conta1",
+      "date": "2026-10-22T22:47:28.829Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1821,
+        "ratingChange": 9,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Kurogane",
+        "polarisId": "opp274885",
+        "charId": 3,
+        "char": "Yoshimitsu",
+        "danId": 26,
+        "dan": "Tekken Emperor",
+        "rating": 1850,
+        "ratingChange": -9,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-140",
+      "account": "conta2",
+      "date": "2026-10-22T19:30:35.853Z",
+      "type": "Ranked",
+      "stage": "Urban Square",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoAlt00002",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 16,
+        "dan": "Shinryu",
+        "rating": 1450,
+        "ratingChange": -14,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "WallSplat",
+        "polarisId": "opp831304",
+        "charId": 1,
+        "char": "Law",
+        "danId": 25,
+        "dan": "Tekken King",
+        "rating": 1815,
+        "ratingChange": 14,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-139",
+      "account": "conta1",
+      "date": "2026-10-22T16:47:39.762Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1839,
+        "ratingChange": -18,
+        "rounds": 2
+      },
+      "opp": {
+        "name": "AcreMishima",
+        "polarisId": "opp50181",
+        "charId": 38,
+        "char": "Eddy",
+        "danId": 22,
+        "dan": "Raijin",
+        "rating": 1783,
+        "ratingChange": 18,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-138",
+      "account": "conta1",
+      "date": "2026-10-22T12:59:43.051Z",
+      "type": "Ranked",
+      "stage": "Urban Square",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1826,
+        "ratingChange": 13,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "WallSplat",
+        "polarisId": "opp764709",
+        "charId": 1,
+        "char": "Law",
+        "danId": 23,
+        "dan": "Kishin",
+        "rating": 1901,
+        "ratingChange": -13,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-137",
+      "account": "conta1",
+      "date": "2026-10-22T10:33:08.222Z",
+      "type": "Ranked",
+      "stage": "Yakushima",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1813,
+        "ratingChange": 13,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "PunisherBR",
+        "polarisId": "opp701649",
+        "charId": 28,
+        "char": "Zafina",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1891,
+        "ratingChange": -13,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-136",
+      "account": "conta1",
+      "date": "2026-10-22T06:38:10.295Z",
+      "type": "Ranked",
+      "stage": "Urban Square",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1825,
+        "ratingChange": -12,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "BeloKazuya",
+        "polarisId": "opp80245",
+        "charId": 6,
+        "char": "Jin",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1904,
+        "ratingChange": 12,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-135",
+      "account": "conta1",
+      "date": "2026-10-22T03:57:30.721Z",
+      "type": "Quick",
+      "stage": "Ortiz Farm",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1841,
+        "ratingChange": -16,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "PunisherBR",
+        "polarisId": "opp865355",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 20,
+        "dan": "Battle Ruler",
+        "rating": 1758,
+        "ratingChange": 16,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-134",
+      "account": "conta1",
+      "date": "2026-10-22T01:20:09.233Z",
+      "type": "Quick",
+      "stage": "Yakushima",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1823,
+        "ratingChange": 18,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "BeloKazuya",
+        "polarisId": "opp674308",
+        "charId": 3,
+        "char": "Yoshimitsu",
+        "danId": 20,
+        "dan": "Battle Ruler",
+        "rating": 1909,
+        "ratingChange": -18,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-133",
+      "account": "conta2",
+      "date": "2026-10-21T21:20:58.368Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoAlt00002",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 16,
+        "dan": "Shinryu",
+        "rating": 1450,
+        "ratingChange": 9,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "BeloKazuya",
+        "polarisId": "opp238844",
+        "charId": 21,
+        "char": "Nina",
+        "danId": 21,
+        "dan": "Fujin",
+        "rating": 1830,
+        "ratingChange": -9,
+        "rounds": 2
+      }
+    },
+    {
+      "id": "demo-132",
+      "account": "conta1",
+      "date": "2026-10-21T18:43:12.051Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1832,
+        "ratingChange": -9,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "Kurogane",
+        "polarisId": "opp775768",
+        "charId": 7,
+        "char": "Bryan",
+        "danId": 22,
+        "dan": "Raijin",
+        "rating": 1930,
+        "ratingChange": 9,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-131",
+      "account": "conta1",
+      "date": "2026-10-21T15:58:34.256Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1815,
+        "ratingChange": 17,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "iWS2enjoyer",
+        "polarisId": "opp726013",
+        "charId": 14,
+        "char": "Lili",
+        "danId": 20,
+        "dan": "Battle Ruler",
+        "rating": 1835,
+        "ratingChange": -17,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-130",
+      "account": "conta1",
+      "date": "2026-10-21T11:59:24.570Z",
+      "type": "Quick",
+      "stage": "Arena",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1799,
+        "ratingChange": 16,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "ZeroFrame",
+        "polarisId": "opp423928",
+        "charId": 0,
+        "char": "Paul",
+        "danId": 26,
+        "dan": "Tekken Emperor",
+        "rating": 1869,
+        "ratingChange": -16,
+        "rounds": 2
+      }
+    },
+    {
+      "id": "demo-129",
+      "account": "conta1",
+      "date": "2026-10-21T09:33:02.220Z",
+      "type": "Ranked",
+      "stage": "Urban Square",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1813,
+        "ratingChange": -14,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "Hellsweep",
+        "polarisId": "opp185161",
+        "charId": 44,
+        "char": "Armor King",
+        "danId": 20,
+        "dan": "Battle Ruler",
+        "rating": 1903,
+        "ratingChange": 14,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-128",
+      "account": "conta1",
+      "date": "2026-10-21T05:50:49.157Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1806,
+        "ratingChange": 7,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "iWS2enjoyer",
+        "polarisId": "opp159660",
+        "charId": 28,
+        "char": "Zafina",
+        "danId": 22,
+        "dan": "Raijin",
+        "rating": 1872,
+        "ratingChange": -7,
+        "rounds": 2
+      }
+    },
+    {
+      "id": "demo-127",
+      "account": "conta1",
+      "date": "2026-10-21T02:57:45.501Z",
+      "type": "Ranked",
+      "stage": "Urban Square",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1817,
+        "ratingChange": -11,
+        "rounds": 2
+      },
+      "opp": {
+        "name": "iWS2enjoyer",
+        "polarisId": "opp360146",
+        "charId": 3,
+        "char": "Yoshimitsu",
+        "danId": 26,
+        "dan": "Tekken Emperor",
+        "rating": 1768,
+        "ratingChange": 11,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-126",
+      "account": "conta2",
+      "date": "2026-10-21T00:19:03.891Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoAlt00002",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 16,
+        "dan": "Shinryu",
+        "rating": 1450,
+        "ratingChange": -7,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "NorteKing",
+        "polarisId": "opp661788",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1731,
+        "ratingChange": 7,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-125",
+      "account": "conta1",
+      "date": "2026-10-20T20:52:17.760Z",
+      "type": "Ranked",
+      "stage": "Urban Square",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1797,
+        "ratingChange": 20,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "BeloKazuya",
+        "polarisId": "opp840455",
+        "charId": 28,
+        "char": "Zafina",
+        "danId": 23,
+        "dan": "Kishin",
+        "rating": 1885,
+        "ratingChange": -20,
+        "rounds": 2
+      }
+    },
+    {
+      "id": "demo-124",
+      "account": "conta1",
+      "date": "2026-10-20T18:19:41.855Z",
+      "type": "Ranked",
+      "stage": "Urban Square",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1781,
+        "ratingChange": 16,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "AcreMishima",
+        "polarisId": "opp393575",
+        "charId": 34,
+        "char": "Azucena",
+        "danId": 25,
+        "dan": "Tekken King",
+        "rating": 1857,
+        "ratingChange": -16,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-123",
+      "account": "conta1",
+      "date": "2026-10-20T14:28:33.483Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1774,
+        "ratingChange": 7,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "BeloKazuya",
+        "polarisId": "opp954890",
+        "charId": 8,
+        "char": "Kazuya",
+        "danId": 25,
+        "dan": "Tekken King",
+        "rating": 1698,
+        "ratingChange": -7,
+        "rounds": 2
+      }
+    },
+    {
+      "id": "demo-122",
+      "account": "conta1",
+      "date": "2026-10-20T11:53:34.487Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1783,
+        "ratingChange": -9,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "AcreMishima",
+        "polarisId": "opp399025",
+        "charId": 36,
+        "char": "Raven",
+        "danId": 22,
+        "dan": "Raijin",
+        "rating": 1786,
+        "ratingChange": 9,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-121",
+      "account": "conta1",
+      "date": "2026-10-20T08:48:39.650Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1792,
+        "ratingChange": -9,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "NorteKing",
+        "polarisId": "opp54073",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 25,
+        "dan": "Tekken King",
+        "rating": 1820,
+        "ratingChange": 9,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-120",
+      "account": "conta1",
+      "date": "2026-10-20T05:43:39.023Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1800,
+        "ratingChange": -8,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "NorteKing",
+        "polarisId": "opp310763",
+        "charId": 38,
+        "char": "Eddy",
+        "danId": 20,
+        "dan": "Battle Ruler",
+        "rating": 1752,
+        "ratingChange": 8,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-119",
+      "account": "conta2",
+      "date": "2026-10-20T02:17:23.715Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoAlt00002",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 16,
+        "dan": "Shinryu",
+        "rating": 1450,
+        "ratingChange": -14,
+        "rounds": 2
+      },
+      "opp": {
+        "name": "ZeroFrame",
+        "polarisId": "opp385944",
+        "charId": 33,
+        "char": "Reina",
+        "danId": 23,
+        "dan": "Kishin",
+        "rating": 1712,
+        "ratingChange": 14,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-118",
+      "account": "conta1",
+      "date": "2026-10-19T23:01:12.092Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1819,
+        "ratingChange": -19,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "WallSplat",
+        "polarisId": "opp482377",
+        "charId": 28,
+        "char": "Zafina",
+        "danId": 22,
+        "dan": "Raijin",
+        "rating": 1732,
+        "ratingChange": 19,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-117",
+      "account": "conta1",
+      "date": "2026-10-19T19:57:10.628Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1808,
+        "ratingChange": 11,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "WallSplat",
+        "polarisId": "opp160164",
+        "charId": 2,
+        "char": "King",
+        "danId": 26,
+        "dan": "Tekken Emperor",
+        "rating": 1747,
+        "ratingChange": -11,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-116",
+      "account": "conta1",
+      "date": "2026-10-19T16:40:47.013Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1826,
+        "ratingChange": -18,
+        "rounds": 2
+      },
+      "opp": {
+        "name": "BeloKazuya",
+        "polarisId": "opp114166",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 25,
+        "dan": "Tekken King",
+        "rating": 1854,
+        "ratingChange": 18,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-115",
+      "account": "conta1",
+      "date": "2026-10-19T13:33:06.349Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1814,
+        "ratingChange": 12,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Kurogane",
+        "polarisId": "opp881422",
+        "charId": 3,
+        "char": "Yoshimitsu",
+        "danId": 20,
+        "dan": "Battle Ruler",
+        "rating": 1758,
+        "ratingChange": -12,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-114",
+      "account": "conta1",
+      "date": "2026-10-19T11:00:37.143Z",
+      "type": "Quick",
+      "stage": "Yakushima",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1795,
+        "ratingChange": 19,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Ghost_88",
+        "polarisId": "opp964456",
+        "charId": 4,
+        "char": "Hwoarang",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1829,
+        "ratingChange": -19,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-113",
+      "account": "conta1",
+      "date": "2026-10-19T07:35:35.727Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1811,
+        "ratingChange": -16,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "iWS2enjoyer",
+        "polarisId": "opp637442",
+        "charId": 28,
+        "char": "Zafina",
+        "danId": 23,
+        "dan": "Kishin",
+        "rating": 1824,
+        "ratingChange": 16,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-112",
+      "account": "conta2",
+      "date": "2026-10-19T04:57:20.703Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoAlt00002",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 16,
+        "dan": "Shinryu",
+        "rating": 1450,
+        "ratingChange": -18,
+        "rounds": 2
+      },
+      "opp": {
+        "name": "iWS2enjoyer",
+        "polarisId": "opp665857",
+        "charId": 36,
+        "char": "Raven",
+        "danId": 20,
+        "dan": "Battle Ruler",
+        "rating": 1796,
+        "ratingChange": 18,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-111",
+      "account": "conta1",
+      "date": "2026-10-19T01:08:14.512Z",
+      "type": "Ranked",
+      "stage": "Urban Square",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1830,
+        "ratingChange": -19,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "iWS2enjoyer",
+        "polarisId": "opp947052",
+        "charId": 8,
+        "char": "Kazuya",
+        "danId": 20,
+        "dan": "Battle Ruler",
+        "rating": 1780,
+        "ratingChange": 19,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-110",
+      "account": "conta1",
+      "date": "2026-10-18T21:57:19.183Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1842,
+        "ratingChange": -12,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "Ghost_88",
+        "polarisId": "opp534914",
+        "charId": 1,
+        "char": "Law",
+        "danId": 22,
+        "dan": "Raijin",
+        "rating": 1774,
+        "ratingChange": 12,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-109",
+      "account": "conta1",
+      "date": "2026-10-18T19:03:20.334Z",
+      "type": "Ranked",
+      "stage": "Yakushima",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1822,
+        "ratingChange": 20,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "PanteraNegra",
+        "polarisId": "opp147896",
+        "charId": 21,
+        "char": "Nina",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1813,
+        "ratingChange": -20,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-108",
+      "account": "conta1",
+      "date": "2026-10-18T16:23:47.826Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1831,
+        "ratingChange": -9,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "Kurogane",
+        "polarisId": "opp796082",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 25,
+        "dan": "Tekken King",
+        "rating": 1781,
+        "ratingChange": 9,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-107",
+      "account": "conta1",
+      "date": "2026-10-18T13:38:33.769Z",
+      "type": "Ranked",
+      "stage": "Yakushima",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1823,
+        "ratingChange": 8,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "AcreMishima",
+        "polarisId": "opp973066",
+        "charId": 1,
+        "char": "Law",
+        "danId": 22,
+        "dan": "Raijin",
+        "rating": 1770,
+        "ratingChange": -8,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-106",
+      "account": "conta1",
+      "date": "2026-10-18T10:14:29.635Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1835,
+        "ratingChange": -12,
+        "rounds": 2
+      },
+      "opp": {
+        "name": "PunisherBR",
+        "polarisId": "opp943637",
+        "charId": 5,
+        "char": "Xiaoyu",
+        "danId": 25,
+        "dan": "Tekken King",
+        "rating": 1773,
+        "ratingChange": 12,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-105",
+      "account": "conta2",
+      "date": "2026-10-18T06:49:53.430Z",
+      "type": "Quick",
+      "stage": "Ortiz Farm",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoAlt00002",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 16,
+        "dan": "Shinryu",
+        "rating": 1450,
+        "ratingChange": -20,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "PunisherBR",
+        "polarisId": "opp664790",
+        "charId": 21,
+        "char": "Nina",
+        "danId": 20,
+        "dan": "Battle Ruler",
+        "rating": 1908,
+        "ratingChange": 20,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-104",
+      "account": "conta1",
+      "date": "2026-10-18T03:36:06.211Z",
+      "type": "Ranked",
+      "stage": "Yakushima",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1823,
+        "ratingChange": 12,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "ZeroFrame",
+        "polarisId": "opp233983",
+        "charId": 2,
+        "char": "King",
+        "danId": 23,
+        "dan": "Kishin",
+        "rating": 1793,
+        "ratingChange": -12,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-103",
+      "account": "conta1",
+      "date": "2026-10-18T00:28:12.805Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1811,
+        "ratingChange": 12,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Yuki-Raven",
+        "polarisId": "opp977660",
+        "charId": 28,
+        "char": "Zafina",
+        "danId": 23,
+        "dan": "Kishin",
+        "rating": 1877,
+        "ratingChange": -12,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-102",
+      "account": "conta1",
+      "date": "2026-10-17T21:56:45.829Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1792,
+        "ratingChange": 19,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Ghost_88",
+        "polarisId": "opp813060",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 20,
+        "dan": "Battle Ruler",
+        "rating": 1761,
+        "ratingChange": -19,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-101",
+      "account": "conta1",
+      "date": "2026-10-17T18:29:17.736Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1804,
+        "ratingChange": -12,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "Kurogane",
+        "polarisId": "opp5123",
+        "charId": 14,
+        "char": "Lili",
+        "danId": 20,
+        "dan": "Battle Ruler",
+        "rating": 1858,
+        "ratingChange": 12,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-100",
+      "account": "conta1",
+      "date": "2026-10-17T15:50:14.855Z",
+      "type": "Ranked",
+      "stage": "Urban Square",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1819,
+        "ratingChange": -15,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "iWS2enjoyer",
+        "polarisId": "opp166152",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 23,
+        "dan": "Kishin",
+        "rating": 1770,
+        "ratingChange": 15,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-99",
+      "account": "conta1",
+      "date": "2026-10-17T12:11:53.476Z",
+      "type": "Quick",
+      "stage": "Yakushima",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1829,
+        "ratingChange": -10,
+        "rounds": 2
+      },
+      "opp": {
+        "name": "WallSplat",
+        "polarisId": "opp877932",
+        "charId": 33,
+        "char": "Reina",
+        "danId": 22,
+        "dan": "Raijin",
+        "rating": 1738,
+        "ratingChange": 10,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-98",
+      "account": "conta2",
+      "date": "2026-10-17T09:13:56.046Z",
+      "type": "Quick",
+      "stage": "Urban Square",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoAlt00002",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 16,
+        "dan": "Shinryu",
+        "rating": 1450,
+        "ratingChange": 14,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "PunisherBR",
+        "polarisId": "opp693794",
+        "charId": 28,
+        "char": "Zafina",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1929,
+        "ratingChange": -14,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-97",
+      "account": "conta1",
+      "date": "2026-10-17T06:02:41.048Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1812,
+        "ratingChange": 17,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Hellsweep",
+        "polarisId": "opp824870",
+        "charId": 44,
+        "char": "Armor King",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1772,
+        "ratingChange": -17,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-96",
+      "account": "conta1",
+      "date": "2026-10-17T03:05:52.147Z",
+      "type": "Ranked",
+      "stage": "Urban Square",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1800,
+        "ratingChange": 12,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Ghost_88",
+        "polarisId": "opp212041",
+        "charId": 28,
+        "char": "Zafina",
+        "danId": 25,
+        "dan": "Tekken King",
+        "rating": 1778,
+        "ratingChange": -12,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-95",
+      "account": "conta1",
+      "date": "2026-10-16T23:55:45.619Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1787,
+        "ratingChange": 13,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Kurogane",
+        "polarisId": "opp32064",
+        "charId": 5,
+        "char": "Xiaoyu",
+        "danId": 26,
+        "dan": "Tekken Emperor",
+        "rating": 1836,
+        "ratingChange": -13,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-94",
+      "account": "conta1",
+      "date": "2026-10-16T20:35:15.820Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1796,
+        "ratingChange": -9,
+        "rounds": 2
+      },
+      "opp": {
+        "name": "AcreMishima",
+        "polarisId": "opp311822",
+        "charId": 6,
+        "char": "Jin",
+        "danId": 25,
+        "dan": "Tekken King",
+        "rating": 1742,
+        "ratingChange": 9,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-93",
+      "account": "conta1",
+      "date": "2026-10-16T17:16:04.508Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1784,
+        "ratingChange": 12,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "ZeroFrame",
+        "polarisId": "opp246046",
+        "charId": 7,
+        "char": "Bryan",
+        "danId": 22,
+        "dan": "Raijin",
+        "rating": 1847,
+        "ratingChange": -12,
+        "rounds": 2
+      }
+    },
+    {
+      "id": "demo-92",
+      "account": "conta1",
+      "date": "2026-10-16T14:40:47.191Z",
+      "type": "Quick",
+      "stage": "Urban Square",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1772,
+        "ratingChange": 12,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Kurogane",
+        "polarisId": "opp946897",
+        "charId": 0,
+        "char": "Paul",
+        "danId": 23,
+        "dan": "Kishin",
+        "rating": 1699,
+        "ratingChange": -12,
+        "rounds": 2
+      }
+    },
+    {
+      "id": "demo-91",
+      "account": "conta2",
+      "date": "2026-10-16T11:47:27.655Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoAlt00002",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 16,
+        "dan": "Shinryu",
+        "rating": 1450,
+        "ratingChange": 6,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "ZeroFrame",
+        "polarisId": "opp333215",
+        "charId": 7,
+        "char": "Bryan",
+        "danId": 22,
+        "dan": "Raijin",
+        "rating": 1745,
+        "ratingChange": -6,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-90",
+      "account": "conta1",
+      "date": "2026-10-16T08:21:13.673Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1753,
+        "ratingChange": 19,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "AcreMishima",
+        "polarisId": "opp745653",
+        "charId": 38,
+        "char": "Eddy",
+        "danId": 21,
+        "dan": "Fujin",
+        "rating": 1850,
+        "ratingChange": -19,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-89",
+      "account": "conta1",
+      "date": "2026-10-16T05:38:06.419Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1738,
+        "ratingChange": 15,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "ZeroFrame",
+        "polarisId": "opp442726",
+        "charId": 38,
+        "char": "Eddy",
+        "danId": 26,
+        "dan": "Tekken Emperor",
+        "rating": 1679,
+        "ratingChange": -15,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-88",
+      "account": "conta1",
+      "date": "2026-10-16T02:32:30.482Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1719,
+        "ratingChange": 19,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Kurogane",
+        "polarisId": "opp757923",
+        "charId": 0,
+        "char": "Paul",
+        "danId": 22,
+        "dan": "Raijin",
+        "rating": 1746,
+        "ratingChange": -19,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-87",
+      "account": "conta1",
+      "date": "2026-10-15T23:31:23.035Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1736,
+        "ratingChange": -17,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "Kurogane",
+        "polarisId": "opp31971",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 22,
+        "dan": "Raijin",
+        "rating": 1712,
+        "ratingChange": 17,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-86",
+      "account": "conta1",
+      "date": "2026-10-15T20:18:18.578Z",
+      "type": "Quick",
+      "stage": "Yakushima",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1752,
+        "ratingChange": -16,
+        "rounds": 2
+      },
+      "opp": {
+        "name": "WallSplat",
+        "polarisId": "opp19126",
+        "charId": 28,
+        "char": "Zafina",
+        "danId": 23,
+        "dan": "Kishin",
+        "rating": 1834,
+        "ratingChange": 16,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-85",
+      "account": "conta1",
+      "date": "2026-10-15T16:42:56.026Z",
+      "type": "Ranked",
+      "stage": "Yakushima",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1735,
+        "ratingChange": 17,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "BeloKazuya",
+        "polarisId": "opp575163",
+        "charId": 0,
+        "char": "Paul",
+        "danId": 25,
+        "dan": "Tekken King",
+        "rating": 1677,
+        "ratingChange": -17,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-84",
+      "account": "conta2",
+      "date": "2026-10-15T13:57:34.335Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoAlt00002",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 16,
+        "dan": "Shinryu",
+        "rating": 1450,
+        "ratingChange": 9,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "ZeroFrame",
+        "polarisId": "opp445325",
+        "charId": 2,
+        "char": "King",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1641,
+        "ratingChange": -9,
+        "rounds": 2
+      }
+    },
+    {
+      "id": "demo-83",
+      "account": "conta1",
+      "date": "2026-10-15T11:00:53.294Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1717,
+        "ratingChange": 18,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "ZeroFrame",
+        "polarisId": "opp540016",
+        "charId": 7,
+        "char": "Bryan",
+        "danId": 20,
+        "dan": "Battle Ruler",
+        "rating": 1676,
+        "ratingChange": -18,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-82",
+      "account": "conta1",
+      "date": "2026-10-15T07:10:16.640Z",
+      "type": "Ranked",
+      "stage": "Yakushima",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1731,
+        "ratingChange": -14,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "PanteraNegra",
+        "polarisId": "opp923988",
+        "charId": 14,
+        "char": "Lili",
+        "danId": 23,
+        "dan": "Kishin",
+        "rating": 1657,
+        "ratingChange": 14,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-81",
+      "account": "conta1",
+      "date": "2026-10-15T04:35:22.121Z",
+      "type": "Quick",
+      "stage": "Yakushima",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1714,
+        "ratingChange": 17,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "AcreMishima",
+        "polarisId": "opp57042",
+        "charId": 34,
+        "char": "Azucena",
+        "danId": 25,
+        "dan": "Tekken King",
+        "rating": 1750,
+        "ratingChange": -17,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-80",
+      "account": "conta1",
+      "date": "2026-10-15T01:46:39.957Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1695,
+        "ratingChange": 19,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Kurogane",
+        "polarisId": "opp413973",
+        "charId": 14,
+        "char": "Lili",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1644,
+        "ratingChange": -19,
+        "rounds": 2
+      }
+    },
+    {
+      "id": "demo-79",
+      "account": "conta1",
+      "date": "2026-10-14T22:49:31.210Z",
+      "type": "Ranked",
+      "stage": "Urban Square",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1708,
+        "ratingChange": -13,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "WallSplat",
+        "polarisId": "opp666986",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 20,
+        "dan": "Battle Ruler",
+        "rating": 1632,
+        "ratingChange": 13,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-78",
+      "account": "conta1",
+      "date": "2026-10-14T19:26:47.232Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1715,
+        "ratingChange": -7,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "Ghost_88",
+        "polarisId": "opp779670",
+        "charId": 14,
+        "char": "Lili",
+        "danId": 26,
+        "dan": "Tekken Emperor",
+        "rating": 1764,
+        "ratingChange": 7,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-77",
+      "account": "conta2",
+      "date": "2026-10-14T16:26:59.130Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoAlt00002",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 16,
+        "dan": "Shinryu",
+        "rating": 1450,
+        "ratingChange": -13,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "Ghost_88",
+        "polarisId": "opp123487",
+        "charId": 34,
+        "char": "Azucena",
+        "danId": 23,
+        "dan": "Kishin",
+        "rating": 1708,
+        "ratingChange": 13,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-76",
+      "account": "conta1",
+      "date": "2026-10-14T13:18:58.867Z",
+      "type": "Ranked",
+      "stage": "Yakushima",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1728,
+        "ratingChange": -13,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "ZeroFrame",
+        "polarisId": "opp13222",
+        "charId": 8,
+        "char": "Kazuya",
+        "danId": 21,
+        "dan": "Fujin",
+        "rating": 1759,
+        "ratingChange": 13,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-75",
+      "account": "conta1",
+      "date": "2026-10-14T10:09:35.293Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1720,
+        "ratingChange": 8,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "AcreMishima",
+        "polarisId": "opp244065",
+        "charId": 7,
+        "char": "Bryan",
+        "danId": 20,
+        "dan": "Battle Ruler",
+        "rating": 1797,
+        "ratingChange": -8,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-74",
+      "account": "conta1",
+      "date": "2026-10-14T06:47:41.344Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1709,
+        "ratingChange": 11,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Yuki-Raven",
+        "polarisId": "opp403531",
+        "charId": 3,
+        "char": "Yoshimitsu",
+        "danId": 21,
+        "dan": "Fujin",
+        "rating": 1777,
+        "ratingChange": -11,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-73",
+      "account": "conta1",
+      "date": "2026-10-14T03:26:50.829Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1718,
+        "ratingChange": -9,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "Kurogane",
+        "polarisId": "opp205571",
+        "charId": 33,
+        "char": "Reina",
+        "danId": 20,
+        "dan": "Battle Ruler",
+        "rating": 1668,
+        "ratingChange": 9,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-72",
+      "account": "conta1",
+      "date": "2026-10-14T00:54:33.717Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1700,
+        "ratingChange": 18,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "AcreMishima",
+        "polarisId": "opp13235",
+        "charId": 4,
+        "char": "Hwoarang",
+        "danId": 23,
+        "dan": "Kishin",
+        "rating": 1601,
+        "ratingChange": -18,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-71",
+      "account": "conta1",
+      "date": "2026-10-13T21:52:29.470Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1694,
+        "ratingChange": 6,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "AcreMishima",
+        "polarisId": "opp942483",
+        "charId": 6,
+        "char": "Jin",
+        "danId": 22,
+        "dan": "Raijin",
+        "rating": 1780,
+        "ratingChange": -6,
+        "rounds": 2
+      }
+    },
+    {
+      "id": "demo-70",
+      "account": "conta2",
+      "date": "2026-10-13T18:20:38.139Z",
+      "type": "Ranked",
+      "stage": "Urban Square",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoAlt00002",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 16,
+        "dan": "Shinryu",
+        "rating": 1450,
+        "ratingChange": 6,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Kurogane",
+        "polarisId": "opp760694",
+        "charId": 0,
+        "char": "Paul",
+        "danId": 26,
+        "dan": "Tekken Emperor",
+        "rating": 1678,
+        "ratingChange": -6,
+        "rounds": 2
+      }
+    },
+    {
+      "id": "demo-69",
+      "account": "conta1",
+      "date": "2026-10-13T14:59:59.739Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1676,
+        "ratingChange": 18,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "PunisherBR",
+        "polarisId": "opp678625",
+        "charId": 4,
+        "char": "Hwoarang",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1755,
+        "ratingChange": -18,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-68",
+      "account": "conta1",
+      "date": "2026-10-13T12:14:55.792Z",
+      "type": "Ranked",
+      "stage": "Urban Square",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1657,
+        "ratingChange": 19,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Kurogane",
+        "polarisId": "opp824770",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 26,
+        "dan": "Tekken Emperor",
+        "rating": 1576,
+        "ratingChange": -19,
+        "rounds": 2
+      }
+    },
+    {
+      "id": "demo-67",
+      "account": "conta1",
+      "date": "2026-10-13T08:39:40.848Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1668,
+        "ratingChange": -11,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "Kurogane",
+        "polarisId": "opp474602",
+        "charId": 14,
+        "char": "Lili",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1639,
+        "ratingChange": 11,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-66",
+      "account": "conta1",
+      "date": "2026-10-13T05:37:16.546Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1683,
+        "ratingChange": -15,
+        "rounds": 2
+      },
+      "opp": {
+        "name": "WallSplat",
+        "polarisId": "opp173442",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 20,
+        "dan": "Battle Ruler",
+        "rating": 1647,
+        "ratingChange": 15,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-65",
+      "account": "conta1",
+      "date": "2026-10-13T03:05:59.658Z",
+      "type": "Quick",
+      "stage": "Yakushima",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1695,
+        "ratingChange": -12,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "Hellsweep",
+        "polarisId": "opp985548",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 20,
+        "dan": "Battle Ruler",
+        "rating": 1758,
+        "ratingChange": 12,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-64",
+      "account": "conta1",
+      "date": "2026-10-12T23:41:49.081Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1706,
+        "ratingChange": -11,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "WallSplat",
+        "polarisId": "opp504242",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 25,
+        "dan": "Tekken King",
+        "rating": 1791,
+        "ratingChange": 11,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-63",
+      "account": "conta2",
+      "date": "2026-10-12T20:46:55.436Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoAlt00002",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 16,
+        "dan": "Shinryu",
+        "rating": 1450,
+        "ratingChange": 13,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Ghost_88",
+        "polarisId": "opp332630",
+        "charId": 21,
+        "char": "Nina",
+        "danId": 23,
+        "dan": "Kishin",
+        "rating": 1642,
+        "ratingChange": -13,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-62",
+      "account": "conta1",
+      "date": "2026-10-12T18:05:09.993Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1712,
+        "ratingChange": -6,
+        "rounds": 2
+      },
+      "opp": {
+        "name": "Ghost_88",
+        "polarisId": "opp363610",
+        "charId": 1,
+        "char": "Law",
+        "danId": 21,
+        "dan": "Fujin",
+        "rating": 1674,
+        "ratingChange": 6,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-61",
+      "account": "conta1",
+      "date": "2026-10-12T14:24:13.244Z",
+      "type": "Ranked",
+      "stage": "Yakushima",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1726,
+        "ratingChange": -14,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "WallSplat",
+        "polarisId": "opp886914",
+        "charId": 12,
+        "char": "Devil Jin",
+        "danId": 22,
+        "dan": "Raijin",
+        "rating": 1645,
+        "ratingChange": 14,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-60",
+      "account": "conta1",
+      "date": "2026-10-12T11:06:55.352Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1712,
+        "ratingChange": 14,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "NorteKing",
+        "polarisId": "opp305365",
+        "charId": 21,
+        "char": "Nina",
+        "danId": 21,
+        "dan": "Fujin",
+        "rating": 1635,
+        "ratingChange": -14,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-59",
+      "account": "conta1",
+      "date": "2026-10-12T08:40:38.792Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1704,
+        "ratingChange": 8,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "PanteraNegra",
+        "polarisId": "opp466976",
+        "charId": 34,
+        "char": "Azucena",
+        "danId": 23,
+        "dan": "Kishin",
+        "rating": 1663,
+        "ratingChange": -8,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-58",
+      "account": "conta1",
+      "date": "2026-10-12T05:13:08.843Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1697,
+        "ratingChange": 7,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Kurogane",
+        "polarisId": "opp650982",
+        "charId": 2,
+        "char": "King",
+        "danId": 20,
+        "dan": "Battle Ruler",
+        "rating": 1756,
+        "ratingChange": -7,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-57",
+      "account": "conta1",
+      "date": "2026-10-12T02:31:52.127Z",
+      "type": "Ranked",
+      "stage": "Urban Square",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1712,
+        "ratingChange": -15,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "WallSplat",
+        "polarisId": "opp812138",
+        "charId": 21,
+        "char": "Nina",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1768,
+        "ratingChange": 15,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-56",
+      "account": "conta2",
+      "date": "2026-10-11T22:40:59.341Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoAlt00002",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 16,
+        "dan": "Shinryu",
+        "rating": 1450,
+        "ratingChange": -6,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "Kurogane",
+        "polarisId": "opp18443",
+        "charId": 44,
+        "char": "Armor King",
+        "danId": 26,
+        "dan": "Tekken Emperor",
+        "rating": 1662,
+        "ratingChange": 6,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-55",
+      "account": "conta1",
+      "date": "2026-10-11T19:32:39.976Z",
+      "type": "Ranked",
+      "stage": "Urban Square",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1693,
+        "ratingChange": 19,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "WallSplat",
+        "polarisId": "opp957580",
+        "charId": 34,
+        "char": "Azucena",
+        "danId": 20,
+        "dan": "Battle Ruler",
+        "rating": 1629,
+        "ratingChange": -19,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-54",
+      "account": "conta1",
+      "date": "2026-10-11T16:24:47.760Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1706,
+        "ratingChange": -13,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "Yuki-Raven",
+        "polarisId": "opp431761",
+        "charId": 3,
+        "char": "Yoshimitsu",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1617,
+        "ratingChange": 13,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-53",
+      "account": "conta1",
+      "date": "2026-10-11T14:00:25.898Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1699,
+        "ratingChange": 7,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "ZeroFrame",
+        "polarisId": "opp899140",
+        "charId": 34,
+        "char": "Azucena",
+        "danId": 26,
+        "dan": "Tekken Emperor",
+        "rating": 1731,
+        "ratingChange": -7,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-52",
+      "account": "conta1",
+      "date": "2026-10-11T10:12:13.941Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1684,
+        "ratingChange": 15,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "BeloKazuya",
+        "polarisId": "opp561423",
+        "charId": 44,
+        "char": "Armor King",
+        "danId": 25,
+        "dan": "Tekken King",
+        "rating": 1733,
+        "ratingChange": -15,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-51",
+      "account": "conta1",
+      "date": "2026-10-11T08:00:36.967Z",
+      "type": "Ranked",
+      "stage": "Yakushima",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1702,
+        "ratingChange": -18,
+        "rounds": 2
+      },
+      "opp": {
+        "name": "NorteKing",
+        "polarisId": "opp769519",
+        "charId": 36,
+        "char": "Raven",
+        "danId": 22,
+        "dan": "Raijin",
+        "rating": 1746,
+        "ratingChange": 18,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-50",
+      "account": "conta1",
+      "date": "2026-10-11T04:12:59.711Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1714,
+        "ratingChange": -12,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "Hellsweep",
+        "polarisId": "opp810735",
+        "charId": 38,
+        "char": "Eddy",
+        "danId": 20,
+        "dan": "Battle Ruler",
+        "rating": 1666,
+        "ratingChange": 12,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-49",
+      "account": "conta2",
+      "date": "2026-10-11T01:01:04.937Z",
+      "type": "Ranked",
+      "stage": "Yakushima",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoAlt00002",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 16,
+        "dan": "Shinryu",
+        "rating": 1450,
+        "ratingChange": 16,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Hellsweep",
+        "polarisId": "opp283655",
+        "charId": 1,
+        "char": "Law",
+        "danId": 22,
+        "dan": "Raijin",
+        "rating": 1751,
+        "ratingChange": -16,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-48",
+      "account": "conta1",
+      "date": "2026-10-10T22:07:28.683Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1699,
+        "ratingChange": 15,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "AcreMishima",
+        "polarisId": "opp177004",
+        "charId": 36,
+        "char": "Raven",
+        "danId": 26,
+        "dan": "Tekken Emperor",
+        "rating": 1771,
+        "ratingChange": -15,
+        "rounds": 2
+      }
+    },
+    {
+      "id": "demo-47",
+      "account": "conta1",
+      "date": "2026-10-10T19:34:32.790Z",
+      "type": "Ranked",
+      "stage": "Urban Square",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1683,
+        "ratingChange": 16,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "AcreMishima",
+        "polarisId": "opp90454",
+        "charId": 12,
+        "char": "Devil Jin",
+        "danId": 21,
+        "dan": "Fujin",
+        "rating": 1631,
+        "ratingChange": -16,
+        "rounds": 2
+      }
+    },
+    {
+      "id": "demo-46",
+      "account": "conta1",
+      "date": "2026-10-10T15:50:52.710Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1671,
+        "ratingChange": 12,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "ZeroFrame",
+        "polarisId": "opp659196",
+        "charId": 2,
+        "char": "King",
+        "danId": 20,
+        "dan": "Battle Ruler",
+        "rating": 1745,
+        "ratingChange": -12,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-45",
+      "account": "conta1",
+      "date": "2026-10-10T12:36:28.642Z",
+      "type": "Ranked",
+      "stage": "Urban Square",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1660,
+        "ratingChange": 11,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "NorteKing",
+        "polarisId": "opp803399",
+        "charId": 34,
+        "char": "Azucena",
+        "danId": 25,
+        "dan": "Tekken King",
+        "rating": 1754,
+        "ratingChange": -11,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-44",
+      "account": "conta1",
+      "date": "2026-10-10T10:09:09.467Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1645,
+        "ratingChange": 15,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "ZeroFrame",
+        "polarisId": "opp645830",
+        "charId": 34,
+        "char": "Azucena",
+        "danId": 23,
+        "dan": "Kishin",
+        "rating": 1650,
+        "ratingChange": -15,
+        "rounds": 2
+      }
+    },
+    {
+      "id": "demo-43",
+      "account": "conta1",
+      "date": "2026-10-10T07:12:45.754Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1627,
+        "ratingChange": 18,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "PunisherBR",
+        "polarisId": "opp548569",
+        "charId": 38,
+        "char": "Eddy",
+        "danId": 25,
+        "dan": "Tekken King",
+        "rating": 1611,
+        "ratingChange": -18,
+        "rounds": 2
+      }
+    },
+    {
+      "id": "demo-42",
+      "account": "conta2",
+      "date": "2026-10-10T04:04:13.301Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoAlt00002",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 16,
+        "dan": "Shinryu",
+        "rating": 1450,
+        "ratingChange": -10,
+        "rounds": 2
+      },
+      "opp": {
+        "name": "Kurogane",
+        "polarisId": "opp803727",
+        "charId": 12,
+        "char": "Devil Jin",
+        "danId": 21,
+        "dan": "Fujin",
+        "rating": 1700,
+        "ratingChange": 10,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-41",
+      "account": "conta1",
+      "date": "2026-10-10T00:27:09.781Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1644,
+        "ratingChange": -17,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "Yuki-Raven",
+        "polarisId": "opp310027",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1626,
+        "ratingChange": 17,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-40",
+      "account": "conta1",
+      "date": "2026-10-09T21:39:05.356Z",
+      "type": "Quick",
+      "stage": "Yakushima",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1653,
+        "ratingChange": -9,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "iWS2enjoyer",
+        "polarisId": "opp316369",
+        "charId": 1,
+        "char": "Law",
+        "danId": 21,
+        "dan": "Fujin",
+        "rating": 1654,
+        "ratingChange": 9,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-39",
+      "account": "conta1",
+      "date": "2026-10-09T17:58:58.331Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1670,
+        "ratingChange": -17,
+        "rounds": 2
+      },
+      "opp": {
+        "name": "PunisherBR",
+        "polarisId": "opp390918",
+        "charId": 28,
+        "char": "Zafina",
+        "danId": 21,
+        "dan": "Fujin",
+        "rating": 1598,
+        "ratingChange": 17,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-38",
+      "account": "conta1",
+      "date": "2026-10-09T14:46:35.496Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1684,
+        "ratingChange": -14,
+        "rounds": 2
+      },
+      "opp": {
+        "name": "AcreMishima",
+        "polarisId": "opp712397",
+        "charId": 38,
+        "char": "Eddy",
+        "danId": 21,
+        "dan": "Fujin",
+        "rating": 1773,
+        "ratingChange": 14,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-37",
+      "account": "conta1",
+      "date": "2026-10-09T12:35:06.293Z",
+      "type": "Quick",
+      "stage": "Urban Square",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1666,
+        "ratingChange": 18,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "BeloKazuya",
+        "polarisId": "opp755387",
+        "charId": 33,
+        "char": "Reina",
+        "danId": 25,
+        "dan": "Tekken King",
+        "rating": 1670,
+        "ratingChange": -18,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-36",
+      "account": "conta1",
+      "date": "2026-10-09T09:31:04.842Z",
+      "type": "Ranked",
+      "stage": "Yakushima",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1683,
+        "ratingChange": -17,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "PanteraNegra",
+        "polarisId": "opp232930",
+        "charId": 12,
+        "char": "Devil Jin",
+        "danId": 25,
+        "dan": "Tekken King",
+        "rating": 1696,
+        "ratingChange": 17,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-35",
+      "account": "conta2",
+      "date": "2026-10-09T06:11:15.671Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoAlt00002",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 16,
+        "dan": "Shinryu",
+        "rating": 1450,
+        "ratingChange": 9,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "BeloKazuya",
+        "polarisId": "opp752562",
+        "charId": 0,
+        "char": "Paul",
+        "danId": 22,
+        "dan": "Raijin",
+        "rating": 1585,
+        "ratingChange": -9,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-34",
+      "account": "conta1",
+      "date": "2026-10-09T02:37:21.985Z",
+      "type": "Ranked",
+      "stage": "Yakushima",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1672,
+        "ratingChange": 11,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "WallSplat",
+        "polarisId": "opp880322",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1626,
+        "ratingChange": -11,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-33",
+      "account": "conta1",
+      "date": "2026-10-08T23:28:55.716Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1683,
+        "ratingChange": -11,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "ZeroFrame",
+        "polarisId": "opp328177",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1741,
+        "ratingChange": 11,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-32",
+      "account": "conta1",
+      "date": "2026-10-08T20:53:16.538Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1666,
+        "ratingChange": 17,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "WallSplat",
+        "polarisId": "opp849404",
+        "charId": 1,
+        "char": "Law",
+        "danId": 26,
+        "dan": "Tekken Emperor",
+        "rating": 1743,
+        "ratingChange": -17,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-31",
+      "account": "conta1",
+      "date": "2026-10-08T17:50:08.714Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1683,
+        "ratingChange": -17,
+        "rounds": 2
+      },
+      "opp": {
+        "name": "Yuki-Raven",
+        "polarisId": "opp338814",
+        "charId": 2,
+        "char": "King",
+        "danId": 23,
+        "dan": "Kishin",
+        "rating": 1697,
+        "ratingChange": 17,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-30",
+      "account": "conta1",
+      "date": "2026-10-08T14:30:26.326Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1696,
+        "ratingChange": -13,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "PanteraNegra",
+        "polarisId": "opp549604",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 21,
+        "dan": "Fujin",
+        "rating": 1745,
+        "ratingChange": 13,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-29",
+      "account": "conta1",
+      "date": "2026-10-08T11:24:50.187Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1680,
+        "ratingChange": 16,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "iWS2enjoyer",
+        "polarisId": "opp876982",
+        "charId": 14,
+        "char": "Lili",
+        "danId": 23,
+        "dan": "Kishin",
+        "rating": 1667,
+        "ratingChange": -16,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-28",
+      "account": "conta2",
+      "date": "2026-10-08T08:04:28.775Z",
+      "type": "Ranked",
+      "stage": "Yakushima",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoAlt00002",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 16,
+        "dan": "Shinryu",
+        "rating": 1450,
+        "ratingChange": 13,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Hellsweep",
+        "polarisId": "opp214934",
+        "charId": 34,
+        "char": "Azucena",
+        "danId": 22,
+        "dan": "Raijin",
+        "rating": 1697,
+        "ratingChange": -13,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-27",
+      "account": "conta1",
+      "date": "2026-10-08T04:53:09.271Z",
+      "type": "Quick",
+      "stage": "Urban Square",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1673,
+        "ratingChange": 7,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Yuki-Raven",
+        "polarisId": "opp759510",
+        "charId": 3,
+        "char": "Yoshimitsu",
+        "danId": 20,
+        "dan": "Battle Ruler",
+        "rating": 1747,
+        "ratingChange": -7,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-26",
+      "account": "conta1",
+      "date": "2026-10-08T02:10:01.831Z",
+      "type": "Ranked",
+      "stage": "Urban Square",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1691,
+        "ratingChange": -18,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "Kurogane",
+        "polarisId": "opp790883",
+        "charId": 21,
+        "char": "Nina",
+        "danId": 22,
+        "dan": "Raijin",
+        "rating": 1617,
+        "ratingChange": 18,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-25",
+      "account": "conta1",
+      "date": "2026-10-07T22:31:18.937Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1699,
+        "ratingChange": -8,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "WallSplat",
+        "polarisId": "opp125098",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 23,
+        "dan": "Kishin",
+        "rating": 1677,
+        "ratingChange": 8,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-24",
+      "account": "conta1",
+      "date": "2026-10-07T19:41:46.125Z",
+      "type": "Ranked",
+      "stage": "Urban Square",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1716,
+        "ratingChange": -17,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "NorteKing",
+        "polarisId": "opp801083",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 25,
+        "dan": "Tekken King",
+        "rating": 1670,
+        "ratingChange": 17,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-23",
+      "account": "conta1",
+      "date": "2026-10-07T16:49:32.816Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1732,
+        "ratingChange": -16,
+        "rounds": 2
+      },
+      "opp": {
+        "name": "AcreMishima",
+        "polarisId": "opp475281",
+        "charId": 4,
+        "char": "Hwoarang",
+        "danId": 20,
+        "dan": "Battle Ruler",
+        "rating": 1691,
+        "ratingChange": 16,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-22",
+      "account": "conta1",
+      "date": "2026-10-07T13:50:50.133Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1712,
+        "ratingChange": 20,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "PanteraNegra",
+        "polarisId": "opp404553",
+        "charId": 6,
+        "char": "Jin",
+        "danId": 22,
+        "dan": "Raijin",
+        "rating": 1810,
+        "ratingChange": -20,
+        "rounds": 2
+      }
+    },
+    {
+      "id": "demo-21",
+      "account": "conta2",
+      "date": "2026-10-07T10:14:54.759Z",
+      "type": "Quick",
+      "stage": "Yakushima",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoAlt00002",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 16,
+        "dan": "Shinryu",
+        "rating": 1450,
+        "ratingChange": -12,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "Hellsweep",
+        "polarisId": "opp583603",
+        "charId": 33,
+        "char": "Reina",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1638,
+        "ratingChange": 12,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-20",
+      "account": "conta1",
+      "date": "2026-10-07T07:04:03.226Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1727,
+        "ratingChange": -15,
+        "rounds": 2
+      },
+      "opp": {
+        "name": "WallSplat",
+        "polarisId": "opp883796",
+        "charId": 8,
+        "char": "Kazuya",
+        "danId": 26,
+        "dan": "Tekken Emperor",
+        "rating": 1717,
+        "ratingChange": 15,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-19",
+      "account": "conta1",
+      "date": "2026-10-07T04:07:16.659Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1716,
+        "ratingChange": 11,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "WallSplat",
+        "polarisId": "opp845828",
+        "charId": 7,
+        "char": "Bryan",
+        "danId": 25,
+        "dan": "Tekken King",
+        "rating": 1799,
+        "ratingChange": -11,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-18",
+      "account": "conta1",
+      "date": "2026-10-07T01:13:07.196Z",
+      "type": "Ranked",
+      "stage": "Ortiz Farm",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1724,
+        "ratingChange": -8,
+        "rounds": 2
+      },
+      "opp": {
+        "name": "ZeroFrame",
+        "polarisId": "opp49471",
+        "charId": 4,
+        "char": "Hwoarang",
+        "danId": 23,
+        "dan": "Kishin",
+        "rating": 1772,
+        "ratingChange": 8,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-17",
+      "account": "conta1",
+      "date": "2026-10-06T22:00:17.552Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1710,
+        "ratingChange": 14,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Hellsweep",
+        "polarisId": "opp344224",
+        "charId": 36,
+        "char": "Raven",
+        "danId": 22,
+        "dan": "Raijin",
+        "rating": 1654,
+        "ratingChange": -14,
+        "rounds": 2
+      }
+    },
+    {
+      "id": "demo-16",
+      "account": "conta1",
+      "date": "2026-10-06T19:03:41.756Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1694,
+        "ratingChange": 16,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "WallSplat",
+        "polarisId": "opp957432",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1684,
+        "ratingChange": -16,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-15",
+      "account": "conta1",
+      "date": "2026-10-06T16:17:53.394Z",
+      "type": "Ranked",
+      "stage": "Urban Square",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1714,
+        "ratingChange": -20,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "WallSplat",
+        "polarisId": "opp40432",
+        "charId": 3,
+        "char": "Yoshimitsu",
+        "danId": 23,
+        "dan": "Kishin",
+        "rating": 1649,
+        "ratingChange": 20,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-14",
+      "account": "conta2",
+      "date": "2026-10-06T12:40:46.865Z",
+      "type": "Quick",
+      "stage": "Arena",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoAlt00002",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 16,
+        "dan": "Shinryu",
+        "rating": 1450,
+        "ratingChange": 13,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "ZeroFrame",
+        "polarisId": "opp871292",
+        "charId": 36,
+        "char": "Raven",
+        "danId": 25,
+        "dan": "Tekken King",
+        "rating": 1811,
+        "ratingChange": -13,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-13",
+      "account": "conta1",
+      "date": "2026-10-06T09:23:02.368Z",
+      "type": "Quick",
+      "stage": "Fallen Destiny",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1706,
+        "ratingChange": 8,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Yuki-Raven",
+        "polarisId": "opp409353",
+        "charId": 2,
+        "char": "King",
+        "danId": 20,
+        "dan": "Battle Ruler",
+        "rating": 1676,
+        "ratingChange": -8,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-12",
+      "account": "conta1",
+      "date": "2026-10-06T06:45:52.113Z",
+      "type": "Ranked",
+      "stage": "Yakushima",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1687,
+        "ratingChange": 19,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Yuki-Raven",
+        "polarisId": "opp589309",
+        "charId": 21,
+        "char": "Nina",
+        "danId": 23,
+        "dan": "Kishin",
+        "rating": 1685,
+        "ratingChange": -19,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-11",
+      "account": "conta1",
+      "date": "2026-10-06T03:55:37.587Z",
+      "type": "Ranked",
+      "stage": "Urban Square",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1696,
+        "ratingChange": -9,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "PanteraNegra",
+        "polarisId": "opp196386",
+        "charId": 2,
+        "char": "King",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1699,
+        "ratingChange": 9,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-10",
+      "account": "conta1",
+      "date": "2026-10-06T00:37:03.424Z",
+      "type": "Ranked",
+      "stage": "Urban Square",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1688,
+        "ratingChange": 8,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "WallSplat",
+        "polarisId": "opp128804",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 25,
+        "dan": "Tekken King",
+        "rating": 1666,
+        "ratingChange": -8,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-9",
+      "account": "conta1",
+      "date": "2026-10-05T20:55:07.372Z",
+      "type": "Ranked",
+      "stage": "Yakushima",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1696,
+        "ratingChange": -8,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "PunisherBR",
+        "polarisId": "opp410974",
+        "charId": 12,
+        "char": "Devil Jin",
+        "danId": 21,
+        "dan": "Fujin",
+        "rating": 1669,
+        "ratingChange": 8,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-8",
+      "account": "conta1",
+      "date": "2026-10-05T18:44:41.194Z",
+      "type": "Ranked",
+      "stage": "Urban Square",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1686,
+        "ratingChange": 10,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "NorteKing",
+        "polarisId": "opp566766",
+        "charId": 2,
+        "char": "King",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1599,
+        "ratingChange": -10,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-7",
+      "account": "conta2",
+      "date": "2026-10-05T15:05:48.418Z",
+      "type": "Ranked",
+      "stage": "Yakushima",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoAlt00002",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 16,
+        "dan": "Shinryu",
+        "rating": 1450,
+        "ratingChange": -19,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "PanteraNegra",
+        "polarisId": "opp320032",
+        "charId": 33,
+        "char": "Reina",
+        "danId": 25,
+        "dan": "Tekken King",
+        "rating": 1759,
+        "ratingChange": 19,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-6",
+      "account": "conta1",
+      "date": "2026-10-05T12:17:20.157Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1677,
+        "ratingChange": 9,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Ghost_88",
+        "polarisId": "opp521158",
+        "charId": 4,
+        "char": "Hwoarang",
+        "danId": 20,
+        "dan": "Battle Ruler",
+        "rating": 1774,
+        "ratingChange": -9,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "demo-5",
+      "account": "conta1",
+      "date": "2026-10-05T09:21:24.541Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1661,
+        "ratingChange": 16,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "WallSplat",
+        "polarisId": "opp438968",
+        "charId": 44,
+        "char": "Armor King",
+        "danId": 25,
+        "dan": "Tekken King",
+        "rating": 1597,
+        "ratingChange": -16,
+        "rounds": 2
+      }
+    },
+    {
+      "id": "demo-4",
+      "account": "conta1",
+      "date": "2026-10-05T05:39:09.771Z",
+      "type": "Ranked",
+      "stage": "Yakushima",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1652,
+        "ratingChange": 9,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Kurogane",
+        "polarisId": "opp986526",
+        "charId": 33,
+        "char": "Reina",
+        "danId": 23,
+        "dan": "Kishin",
+        "rating": 1570,
+        "ratingChange": -9,
+        "rounds": 2
+      }
+    },
+    {
+      "id": "demo-3",
+      "account": "conta1",
+      "date": "2026-10-05T03:12:05.296Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1667,
+        "ratingChange": -15,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "WallSplat",
+        "polarisId": "opp267112",
+        "charId": 5,
+        "char": "Xiaoyu",
+        "danId": 22,
+        "dan": "Raijin",
+        "rating": 1695,
+        "ratingChange": 15,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "demo-2",
+      "account": "conta1",
+      "date": "2026-10-04T23:09:38.767Z",
+      "type": "Quick",
+      "stage": "Ortiz Farm",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1649,
+        "ratingChange": 18,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "NorteKing",
+        "polarisId": "opp471972",
+        "charId": 14,
+        "char": "Lili",
+        "danId": 23,
+        "dan": "Kishin",
+        "rating": 1596,
+        "ratingChange": -18,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "demo-1",
+      "account": "conta1",
+      "date": "2026-10-04T20:12:35.367Z",
+      "type": "Ranked",
+      "stage": "Arena",
+      "win": true,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoBushin01",
+        "charId": 15,
+        "char": "Dragunov",
+        "danId": 24,
+        "dan": "Bushin",
+        "rating": 1640,
+        "ratingChange": 9,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "ZeroFrame",
+        "polarisId": "opp188274",
+        "charId": 38,
+        "char": "Eddy",
+        "danId": 22,
+        "dan": "Raijin",
+        "rating": 1561,
+        "ratingChange": -9,
+        "rounds": 2
+      }
+    },
+    {
+      "id": "demo-0",
+      "account": "conta2",
+      "date": "2026-10-04T17:41:49.836Z",
+      "type": "Ranked",
+      "stage": "Fallen Destiny",
+      "win": false,
+      "me": {
+        "name": "BushinFRV",
+        "polarisId": "demoAlt00002",
+        "charId": 40,
+        "char": "Heihachi",
+        "danId": 16,
+        "dan": "Shinryu",
+        "rating": 1450,
+        "ratingChange": -16,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "WallSplat",
+        "polarisId": "opp196285",
+        "charId": 8,
+        "char": "Kazuya",
+        "danId": 26,
+        "dan": "Tekken Emperor",
+        "rating": 1642,
+        "ratingChange": 16,
+        "rounds": 3
+      }
+    }
+  ]
+}

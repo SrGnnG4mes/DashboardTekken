@@ -1,0 +1,28 @@
+{
+  "sample": true,
+  "updatedAt": "2026-10-25T09:57:15.465Z",
+  "accounts": [
+    {
+      "account": "conta1",
+      "tekkenId": "demoBushin01",
+      "name": "BushinFRV",
+      "region": "América do Sul",
+      "platform": "Steam",
+      "main": "Dragunov",
+      "dan": "Bushin",
+      "danId": 24,
+      "tekkenPower": 187430
+    },
+    {
+      "account": "conta2",
+      "tekkenId": "demoAlt00002",
+      "name": "BushinFRV",
+      "region": "América do Sul",
+      "platform": "Steam",
+      "main": "Heihachi",
+      "dan": "Shinryu",
+      "danId": 16,
+      "tekkenPower": 61200
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BushinFRV no Tekken 8</title>
+  <meta name="description" content="Partidas ranqueadas de Tekken 8 do BushinFRV, com dados do ewgf.gg.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="sample" id="sample" hidden>
+    Você está vendo dados de exemplo. Os reais aparecem depois que o GitHub Action rodar com o seu token.
+  </div>
+
+  <header class="hero">
+    <div class="hero-top">
+      <div class="identity">
+        <h1 id="gamertag">BushinFRV</h1>
+        <p class="plate">
+          <span class="rank" id="rank">—</span>
+          <span id="main">—</span>
+        </p>
+      </div>
+      <nav class="accounts" id="accounts" aria-label="Conta"></nav>
+    </div>
+
+    <figure class="form">
+      <figcaption>
+        <span>Últimas <b id="form-n">0</b> partidas, da mais antiga à mais recente</span>
+        <span class="legend"><i class="sw win"></i>Vitória <i class="sw loss"></i>Derrota <small>altura = pontos de rating</small></span>
+      </figcaption>
+      <div class="strip" id="strip" role="img"></div>
+    </figure>
+
+    <dl class="stats" id="stats"></dl>
+  </header>
+
+  <main>
+    <section class="panel rating" aria-labelledby="h-rating">
+      <h2 id="h-rating">Rating</h2>
+      <div class="chart" id="chart"></div>
+    </section>
+
+    <section class="panel matchups" aria-labelledby="h-mu">
+      <div class="panel-head">
+        <h2 id="h-mu">Contra cada personagem</h2>
+        <div class="toggle" role="group" aria-label="Ordenar">
+          <button type="button" data-sort="games" aria-pressed="true">Mais jogados</button>
+          <button type="button" data-sort="worst" aria-pressed="false">Piores primeiro</button>
+        </div>
+      </div>
+      <ol class="mu-list" id="mu-list"></ol>
+    </section>
+
+    <section class="panel history" aria-labelledby="h-hist">
+      <div class="panel-head">
+        <h2 id="h-hist">Histórico</h2>
+        <form class="filters" id="filters" role="search">
+          <label><span class="sr">Buscar oponente</span>
+            <input type="search" name="q" placeholder="Buscar oponente"></label>
+          <label><span class="sr">Personagem do oponente</span>
+            <select name="char"><option value="">Todos os personagens</option></select></label>
+          <label><span class="sr">Resultado</span>
+            <select name="res">
+              <option value="">Vitórias e derrotas</option>
+              <option value="w">Só vitórias</option>
+              <option value="l">Só derrotas</option>
+            </select></label>
+        </form>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Quando</th><th>Resultado</th><th>Oponente</th><th class="num">Rounds</th><th class="num">Rating</th></tr>
+          </thead>
+          <tbody id="rows"></tbody>
+        </table>
+      </div>
+      <p class="empty" id="empty" hidden>Nenhuma partida com esses filtros. Limpe a busca ou troque o personagem.</p>
+      <button type="button" class="more" id="more" hidden>Mostrar mais 30</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>Dados do <a href="https://ewgf.gg">ewgf.gg</a>, atualizados <span id="updated">—</span>. Só partidas ranqueadas e rápidas registradas pelos servidores do jogo.</p>
+  </footer>
+
+  <div class="tip" id="tip" role="tooltip" hidden></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>
