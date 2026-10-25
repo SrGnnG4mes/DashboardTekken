@@ -4,7 +4,7 @@
 const $ = (s, el = document) => el.querySelector(s);
 const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
 
-const state = { account: null, sort: 'games', q: '', char: '', res: '', shown: 30 };
+const state = { account: null, type: '', sort: 'games', q: '', char: '', res: '', shown: 30 };
 let ALL = [];
 let PROFILES = [];
 
@@ -47,13 +47,14 @@ async function load() {
   const accounts = [...new Set(ALL.map((x) => x.account))].sort((a, c) => rank(a) - rank(c) || a.localeCompare(c));
   state.account = accounts[0] ?? 'all';
   buildAccounts(accounts);
+  buildTypes();
   buildCharFilter();
   render();
 }
 
 // ---------- seleção ----------
 
-const scoped = () => (state.account === 'all' ? ALL : ALL.filter((b) => b.account === state.account));
+const scoped = () => ALL.filter((b) => (state.account === 'all' || b.account === state.account) && (!state.type || b.type === state.type));
 const profileFor = (acc) => PROFILES.find((p) => p.account === acc) ?? PROFILES[0];
 
 // "PAC | BushinFRV" → { prefix: 'PAC', tag: 'BushinFRV' }
@@ -83,6 +84,24 @@ function buildAccounts(accounts) {
     const btn = e.target.closest('button');
     if (!btn) return;
     state.account = btn.dataset.acc;
+    state.shown = 30;
+    nav.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', b === btn));
+    buildCharFilter();
+    render();
+  });
+}
+
+function buildTypes() {
+  const nav = $('#types');
+  const types = [...new Set(ALL.map((b) => b.type))].sort((a, c) => (a === 'Ranqueada' ? -1 : c === 'Ranqueada' ? 1 : a.localeCompare(c)));
+  if (types.length < 2) { nav.hidden = true; return; }
+  const short = { 'Ranqueada': 'Ranqueadas', 'Partida de sala': 'Sala', 'Partida rápida': 'Rápidas', 'Partida em grupo': 'Grupo' };
+  const opts = [['', 'Todas'], ...types.map((t) => [t, short[t] ?? t])];
+  nav.innerHTML = opts.map(([v, l]) => `<button type="button" data-type="${esc(v)}" aria-pressed="${v === state.type}">${esc(l)}</button>`).join('');
+  nav.addEventListener('click', (e) => {
+    const btn = e.target.closest('button');
+    if (!btn) return;
+    state.type = btn.dataset.type;
     state.shown = 30;
     nav.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', b === btn));
     buildCharFilter();
@@ -209,7 +228,11 @@ function renderChart(list) {
         <g class="grid">${ticks.map((v) => `<line x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}"/>`).join('')}</g>
         <g class="axis">
           ${ticks.map((v) => `<text x="${m.l - 8}" y="${y(v) + 4}" text-anchor="end">${fmtNum.format(v)}</text>`).join('')}
-          ${xt.map((i, k) => `<text x="${x(i)}" y="${H - 6}" text-anchor="${k === 0 ? 'start' : k === xt.length - 1 ? 'end' : 'middle'}">${fmtDay.format(pts[i].t)}</text>`).join('')}
+          ${xt.map((i, k) => {
+            const label = fmtDay.format(pts[i].t);
+            if (k > 0 && label === fmtDay.format(pts[xt[k - 1]].t)) return '';
+            return `<text x="${x(i)}" y="${H - 6}" text-anchor="${k === 0 ? 'start' : k === xt.length - 1 ? 'end' : 'middle'}">${label}</text>`;
+          }).join('')}
         </g>
         <path class="line" d="${d}"/>
         <text class="peak" x="${x(peakI)}" y="${y(ys[peakI]) - 9}" text-anchor="${peakI > pts.length * 0.85 ? 'end' : peakI < pts.length * 0.15 ? 'start' : 'middle'}">pico ${fmtNum.format(ys[peakI])}</text>

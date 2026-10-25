@@ -103,6 +103,7 @@ h1 {
   padding-right: 1rem;
 }
 
+.pickers { display: flex; flex-direction: column; align-items: flex-end; gap: .5rem; }
 .accounts { display: flex; gap: 2px; background: var(--rule); padding: 2px; border-radius: 6px; }
 .accounts button, .toggle button {
   font: 600 1rem/1 var(--display);
@@ -154,6 +155,7 @@ h1 {
 }
 .strip .bar {
   flex: 1 1 0;
+  max-width: 26px;
   position: relative;
   min-width: 2px;
   cursor: default;
@@ -328,7 +330,8 @@ footer p { max-width: var(--measure); margin: 0; }
 .tip b { font-weight: 600; }
 
 @media (max-width: 820px) {
-  main { grid-template-columns: 1fr; }
+  main { grid-template-columns: minmax(0, 1fr); }
+  .pickers { align-items: flex-start; }
   .strip { height: 104px; }
   .filters, .filters label, .filters input, .filters select { width: 100%; }
   .mu-list li { grid-template-columns: 6.5rem 1fr 3.75rem; }
