@@ -1,28 +1,13 @@
 {
-  "sample": true,
-  "updatedAt": "2026-10-25T19:32:34.393Z",
+  "updatedAt": "2026-10-25T19:39:46.485Z",
   "accounts": [
     {
-      "account": "conta1",
-      "tekkenId": "demoBushin01",
-      "name": "BushinFRV",
-      "region": "América do Sul",
-      "platform": "Steam",
-      "main": "Dragunov",
-      "dan": "Bushin",
-      "danId": 24,
-      "tekkenPower": 187430
+      "account": "38A89ANqJyN4",
+      "tekkenId": "38A89ANqJyN4"
     },
     {
-      "account": "conta2",
-      "tekkenId": "demoAlt00002",
-      "name": "BushinFRV",
-      "region": "América do Sul",
-      "platform": "Steam",
-      "main": "Heihachi",
-      "dan": "Shinryu",
-      "danId": 16,
-      "tekkenPower": 61200
+      "account": "5n9hjG2j2E6f",
+      "tekkenId": "5n9hjG2j2E6f"
     }
   ]
 }
