@@ -54,9 +54,11 @@ const profiles = [];
 let added = 0;
 let meta;
 
-for (const [i, id] of IDS.entries()) {
-  const account = `conta${i + 1}`;
-  console.log(`→ ${account} (${id})`);
+for (const id of IDS) {
+  // A conta é identificada pelo próprio Tekken ID; a ordem em TEKKEN_IDS
+  // define só qual aparece primeiro no site (a primeira é a principal).
+  const account = id;
+  console.log(`→ ${id}`);
 
   const prof = await api(`/external/profile/${encodeURIComponent(id)}`);
   if (prof) {

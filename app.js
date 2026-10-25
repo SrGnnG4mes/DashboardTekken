@@ -33,8 +33,11 @@ async function load() {
   $('#updated').textContent = ago(b.updatedAt);
   $('#updated').title = b.updatedAt ? fmtDate.format(new Date(b.updatedAt)) : '';
 
-  const accounts = [...new Set(ALL.map((x) => x.account))].sort();
-  state.account = accounts.includes('conta1') ? 'conta1' : (accounts[0] ?? 'all');
+  // Ordem das contas = ordem do profile.json (a primeira de TEKKEN_IDS é a principal).
+  const order = PROFILES.map((x) => x.account);
+  const rank = (a) => (order.includes(a) ? order.indexOf(a) : order.length);
+  const accounts = [...new Set(ALL.map((x) => x.account))].sort((a, c) => rank(a) - rank(c) || a.localeCompare(c));
+  state.account = accounts[0] ?? 'all';
   buildAccounts(accounts);
   buildCharFilter();
   render();
@@ -95,7 +98,7 @@ function render() {
 }
 
 function renderHero(list) {
-  const acc = state.account === 'all' ? 'conta1' : state.account;
+  const acc = state.account === 'all' ? (PROFILES[0]?.account ?? list.at(-1)?.account) : state.account;
   const p = profileFor(acc);
   const last = [...list].reverse().find((b) => b.account === acc) ?? list[list.length - 1];
   $('#gamertag').textContent = p?.name ?? last?.me.name ?? 'BushinFRV';
