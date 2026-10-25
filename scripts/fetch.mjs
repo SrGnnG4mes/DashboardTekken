@@ -8,7 +8,8 @@ import { normalizeBattle, extractBattles, normalizeProfile } from './tekken.mjs'
 
 const API = 'https://api.ewgf.gg';
 const TOKEN = process.env.EWGF_TOKEN;
-const IDS = (process.env.TEKKEN_IDS ?? '').split(',').map((s) => s.trim()).filter(Boolean);
+// Aceita o ID do jogo com traços (38A8-9ANq-JyN4) ou sem (como na URL do ewgf).
+const IDS = (process.env.TEKKEN_IDS ?? '').split(',').map((s) => s.trim().replace(/-/g, '')).filter(Boolean);
 const DATA = new URL('../data/', import.meta.url);
 
 if (!TOKEN) fail('Defina EWGF_TOKEN (secret do repositório).');
