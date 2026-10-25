@@ -6,7 +6,7 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { existsSync } from 'node:fs';
 import { normalizeBattle, extractBattles, normalizeProfile } from './tekken.mjs';
 
-const API = 'https://api.ewgf.gg';
+const API = process.env.EWGF_API ?? 'https://api.ewgf.gg';
 const TOKEN = process.env.EWGF_TOKEN;
 // Aceita o ID do jogo com traços (38A8-9ANq-JyN4) ou sem (como na URL do ewgf).
 const IDS = (process.env.TEKKEN_IDS ?? '').split(',').map((s) => s.trim().replace(/-/g, '')).filter(Boolean);
@@ -55,37 +55,55 @@ const profiles = [];
 let added = 0;
 let meta;
 
+let okAccounts = 0;
+
 for (const id of IDS) {
   // A conta é identificada pelo próprio Tekken ID; a ordem em TEKKEN_IDS
   // define só qual aparece primeiro no site (a primeira é a principal).
   const account = id;
   console.log(`→ ${id}`);
 
-  const prof = await api(`/external/profile/${encodeURIComponent(id)}`);
-  if (prof) {
-    meta = prof._metadata ?? meta;
-    await writeJson(`raw/profile_${id}.json`, prof);
-    profiles.push({ account, ...normalizeProfile(prof, id) });
+  // Perfil: no plano grátis do ewgf este endpoint exige Pro. Se falhar,
+  // seguimos só com as partidas (nome, personagem e rank vêm delas).
+  let profile = { account, tekkenId: id };
+  try {
+    const prof = await api(`/external/profile/${encodeURIComponent(id)}`);
+    if (prof) {
+      meta = prof._metadata ?? meta;
+      await writeJson(`raw/profile_${id}.json`, prof);
+      profile = { account, ...normalizeProfile(prof, id) };
+    }
+  } catch (err) {
+    console.warn(`  perfil indisponível, seguindo sem ele (${err.message.slice(0, 90)})`);
   }
+  profiles.push(profile);
 
-  const body = await api(`/external/battles/${encodeURIComponent(id)}`);
-  if (!body) continue;
-  meta = body._metadata ?? meta;
-  // Resposta bruta guardada para conferir o formato se algo vier estranho.
-  await writeJson(`raw/battles_${id}.json`, body);
+  try {
+    const body = await api(`/external/battles/${encodeURIComponent(id)}`);
+    if (!body) continue;
+    meta = body._metadata ?? meta;
+    // Resposta bruta guardada para conferir o formato se algo vier estranho.
+    await writeJson(`raw/battles_${id}.json`, body);
 
-  const list = extractBattles(body);
-  if (list[0]) console.log(`  campos de uma partida: ${Object.keys(list[0]).join(', ')}`);
-  for (const raw of list) {
-    const b = normalizeBattle(raw, id, account);
-    if (!byId.has(b.id)) added++;
-    byId.set(b.id, b);
+    const list = extractBattles(body);
+    console.log(`  ${list.length} partidas recebidas`);
+    if (list[0]) console.log(`  exemplo de partida: ${JSON.stringify(list[0]).slice(0, 1500)}`);
+    for (const raw of list) {
+      const b = normalizeBattle(raw, id, account);
+      if (!byId.has(b.id)) added++;
+      byId.set(b.id, b);
+    }
+    okAccounts++;
+  } catch (err) {
+    console.error(`  ✖ partidas: ${err.message}`);
   }
 }
 
+if (!okAccounts) fail('Nenhuma conta retornou partidas. Veja as mensagens acima.');
+
 const battles = [...byId.values()].sort((a, b) => (b.date ?? '').localeCompare(a.date ?? ''));
 await writeJson('battles.json', { updatedAt: new Date().toISOString(), count: battles.length, battles });
-if (profiles.length) await writeJson('profile.json', { updatedAt: new Date().toISOString(), accounts: profiles });
+await writeJson('profile.json', { updatedAt: new Date().toISOString(), accounts: profiles });
 
 console.log(`✔ ${added} partidas novas, ${battles.length} no total.`);
 if (meta) console.log(`  plano: ${meta.tier}, requisições restantes hoje: ${meta.rate_limit_remaining}`);
