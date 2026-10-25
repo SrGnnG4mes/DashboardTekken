@@ -18,6 +18,7 @@
   <header class="hero">
     <div class="hero-top">
       <div class="identity">
+        <p class="prefix" id="prefix" hidden></p>
         <h1 id="gamertag">BushinFRV</h1>
         <p class="plate">
           <span class="rank" id="rank">—</span>
@@ -30,7 +31,7 @@
     <figure class="form">
       <figcaption>
         <span>Últimas <b id="form-n">0</b> partidas, da mais antiga à mais recente</span>
-        <span class="legend"><i class="sw win"></i>Vitória <i class="sw loss"></i>Derrota <small>altura = pontos de rating</small></span>
+        <span class="legend"><i class="sw win"></i>Vitória <i class="sw loss"></i>Derrota <small>altura = diferença de rounds</small></span>
       </figcaption>
       <div class="strip" id="strip" role="img"></div>
     </figure>
@@ -40,7 +41,7 @@
 
   <main>
     <section class="panel rating" aria-labelledby="h-rating">
-      <h2 id="h-rating">Rating</h2>
+      <h2 id="h-rating">Tekken Power</h2>
       <div class="chart" id="chart"></div>
     </section>
 
@@ -74,7 +75,7 @@
       <div class="table-wrap">
         <table>
           <thead>
-            <tr><th>Quando</th><th>Resultado</th><th>Oponente</th><th class="num">Rounds</th><th class="num">Rating</th></tr>
+            <tr><th>Quando</th><th>Resultado</th><th>Oponente</th><th class="num">Rounds</th><th class="num">Tekken Power</th></tr>
           </thead>
           <tbody id="rows"></tbody>
         </table>
@@ -85,7 +86,7 @@
   </main>
 
   <footer>
-    <p>Dados do <a href="https://ewgf.gg">ewgf.gg</a>, atualizados <span id="updated">—</span>. Só partidas ranqueadas e rápidas registradas pelos servidores do jogo.</p>
+    <p>Dados do <a href="https://ewgf.gg">ewgf.gg</a>, atualizados <span id="updated">—</span>. No plano grátis do ewgf, as partidas chegam com 24 horas de atraso.</p>
   </footer>
 
   <div class="tip" id="tip" role="tooltip" hidden></div>

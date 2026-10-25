@@ -72,6 +72,13 @@ a { color: inherit; text-underline-offset: 3px; }
   gap: 1rem 2rem;
 }
 
+.prefix {
+  margin: 0 0 .35rem;
+  font: 600 clamp(1.1rem, 2.6vw, 1.6rem)/1 var(--display);
+  color: var(--muted);
+  letter-spacing: .04em;
+}
+
 h1 {
   font: 700 clamp(3.25rem, 11vw, 8.5rem)/.82 var(--display);
   letter-spacing: -.01em;
@@ -275,6 +282,7 @@ th {
 td { padding: .6rem .75rem .6rem 0; border-bottom: 1px solid var(--rule); vertical-align: middle; }
 .num { text-align: right; font-variant-numeric: tabular-nums; }
 td small { display: block; color: var(--muted); font-size: .8rem; }
+td small.delta { font-weight: 600; }
 .res {
   display: inline-block;
   min-width: 5.5rem;

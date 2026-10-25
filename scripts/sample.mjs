@@ -26,11 +26,11 @@ for (let i = 0; i < 160; i++) {
   const win = rnd() < tough;
   const delta = Math.round((win ? 1 : -1) * (6 + rnd() * 14));
   const mine = { name: 'BushinFRV', polarisId: alt ? ALT : ME, characterId: myChar,
-    danRank: alt ? 16 : 24, ratingBefore: alt ? 1450 : rating, ratingChange: delta,
+    danRank: alt ? 16 : 24, tekkenPower: alt ? 61200 : rating * 200,
     rounds: win ? 3 : Math.floor(rnd() * 3) };
   const theirs = { name: pickOne(oppNames), polarisId: `opp${Math.floor(rnd() * 1e6)}`,
     characterId: oppChar, danRank: 20 + Math.floor(rnd() * 7),
-    ratingBefore: rating + Math.round((rnd() - 0.5) * 200), ratingChange: -delta,
+    tekkenPower: (rating + Math.round((rnd() - 0.5) * 200)) * 200,
     rounds: win ? Math.floor(rnd() * 3) : 3 };
   if (!alt) rating += delta;
   const meFirst = rnd() < 0.5;

@@ -22,7 +22,11 @@ export const DAN_RANKS = [
   'God of Destruction',
 ];
 
-const BATTLE_TYPES = { 1: 'Quick', 2: 'Ranked', 3: 'Group', 4: 'Player' };
+const BATTLE_TYPES = {
+  1: 'Partida rápida', 2: 'Ranqueada', 3: 'Partida em grupo', 4: 'Partida de sala',
+  QUICK_BATTLE: 'Partida rápida', RANKED_BATTLE: 'Ranqueada',
+  GROUP_BATTLE: 'Partida em grupo', PLAYER_BATTLE: 'Partida de sala',
+};
 
 // --- helpers -------------------------------------------------------------
 
@@ -82,11 +86,12 @@ function side(battle, s) {
     if (fromNested !== undefined) return fromNested;
     return pick(top, prefixes.flatMap((p) => suffixes.map((x) => p + x)));
   };
-  const charRaw = get('characterId', 'charaId', 'chara', 'character', 'charId', 'characterName');
+  const charRaw = get('char', 'characterId', 'charaId', 'chara', 'character', 'charId', 'characterName');
   const danRaw = get('danRank', 'rank', 'dan', 'danRankId');
   return {
     name: get('name', 'playerName', 'displayName') ?? '???',
-    polarisId: get('polarisId', 'tekkenId', 'id', 'userId'),
+    polarisId: get('tekkenId', 'polarisId', 'id', 'userId'),
+    region: get('region'),
     charId: toNum(charRaw),
     char: charName(charRaw),
     danId: toNum(danRaw),
@@ -136,8 +141,8 @@ export function normalizeBattle(raw, myId, account) {
     id: String(id),
     account,
     date: toIso(pick(idx, ['battleAt', 'battleTime', 'date', 'timestamp', 'createdAt', 'playedAt'])),
-    type: BATTLE_TYPES[toNum(typeRaw)] ?? (typeRaw !== undefined ? String(typeRaw) : 'Ranked'),
-    stage: pick(idx, ['stageName', 'stageId', 'stage']),
+    type: BATTLE_TYPES[typeRaw] ?? BATTLE_TYPES[toNum(typeRaw)] ?? (typeRaw !== undefined ? String(typeRaw) : 'Ranqueada'),
+    stage: pick(idx, ['stage', 'stageName', 'stageId']),
     win: win ?? false,
     me,
     opp,

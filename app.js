@@ -10,6 +10,7 @@ let PROFILES = [];
 
 const fmtDate = new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' });
 const fmtDay = new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: 'short' });
+const fmtNum = new Intl.NumberFormat('pt-BR');
 const rtf = new Intl.RelativeTimeFormat('pt-BR', { numeric: 'auto' });
 
 function ago(iso) {
@@ -19,7 +20,7 @@ function ago(iso) {
   for (const [u, sec] of units) if (Math.abs(s) >= sec) return rtf.format(Math.round(s / sec), u);
   return 'agora há pouco';
 }
-const signed = (n) => (n > 0 ? `+${n}` : `${n}`);
+const signedFmt = (n) => (n > 0 ? '+' : n < 0 ? '−' : '') + fmtNum.format(Math.abs(n));
 const pct = (w, n) => (n ? Math.round((w / n) * 100) : 0);
 
 async function load() {
@@ -29,6 +30,13 @@ async function load() {
   ]);
   ALL = (b.battles ?? []).filter((x) => x.date).sort((a, c) => a.date.localeCompare(c.date)); // mais antiga → mais recente
   PROFILES = p.accounts ?? [];
+  const prevTp = new Map();
+  for (const x of ALL) {
+    const tp = x.me.tekkenPower;
+    const prev = prevTp.get(x.account);
+    x.me.tpDelta = tp != null && prev != null ? tp - prev : null;
+    if (tp != null) prevTp.set(x.account, tp);
+  }
   $('#sample').hidden = !b.sample;
   $('#updated').textContent = ago(b.updatedAt);
   $('#updated').title = b.updatedAt ? fmtDate.format(new Date(b.updatedAt)) : '';
@@ -48,12 +56,17 @@ async function load() {
 const scoped = () => (state.account === 'all' ? ALL : ALL.filter((b) => b.account === state.account));
 const profileFor = (acc) => PROFILES.find((p) => p.account === acc) ?? PROFILES[0];
 
+// "PAC | BushinFRV" → { prefix: 'PAC', tag: 'BushinFRV' }
+function splitName(name) {
+  const m = String(name ?? '').match(/^(.+?)\s*\|\s*(.+)$/);
+  return m ? { prefix: m[1], tag: m[2] } : { prefix: '', tag: String(name ?? '') };
+}
+
 function accountLabel(acc, i) {
+  const last = [...ALL].reverse().find((b) => b.account === acc);
   const p = profileFor(acc);
-  if (p?.account === acc && p.main) return p.main;
-  const chars = ALL.filter((b) => b.account === acc).map((b) => b.me.char);
-  const top = mode(chars);
-  return top ?? `Conta ${i + 1}`;
+  const name = last?.me.name ?? (p?.account === acc ? p.name : undefined);
+  return name ? splitName(name).tag : `Conta ${i + 1}`;
 }
 function mode(arr) {
   const m = new Map();
@@ -101,7 +114,10 @@ function renderHero(list) {
   const acc = state.account === 'all' ? (PROFILES[0]?.account ?? list.at(-1)?.account) : state.account;
   const p = profileFor(acc);
   const last = [...list].reverse().find((b) => b.account === acc) ?? list[list.length - 1];
-  $('#gamertag').textContent = p?.name ?? last?.me.name ?? 'BushinFRV';
+  const { prefix, tag } = splitName(last?.me.name ?? p?.name ?? 'BushinFRV');
+  $('#gamertag').textContent = tag;
+  $('#prefix').textContent = prefix;
+  $('#prefix').hidden = !prefix;
   $('#rank').textContent = last?.me.dan ?? p?.dan ?? '—';
   $('#main').textContent = last?.me.char ?? p?.main ?? '—';
   document.title = `${$('#gamertag').textContent} no Tekken 8`;
@@ -111,11 +127,10 @@ function renderStrip(list) {
   const recent = list.slice(-80);
   const strip = $('#strip');
   $('#form-n').textContent = recent.length;
-  const max = Math.max(1, ...recent.map((b) => Math.abs(b.me.ratingChange ?? 0)));
   strip.classList.remove('ready');
   strip.innerHTML = recent.map((b, i) => {
-    const d = Math.abs(b.me.ratingChange ?? 0);
-    const h = b.me.ratingChange == null ? 60 : 18 + (d / max) * 82;
+    const margin = b.me.rounds != null && b.opp.rounds != null ? Math.abs(b.me.rounds - b.opp.rounds) : null;
+    const h = margin == null ? 60 : 34 + (Math.min(margin, 3) / 3) * 66;
     return `<div class="bar ${b.win ? 'w' : 'l'}" data-i="${list.length - recent.length + i}" style="--i:${i}"><i style="height:${(h / 2).toFixed(1)}%"></i></div>`;
   }).join('');
   const w = recent.filter((b) => b.win).length;
@@ -125,7 +140,7 @@ function renderStrip(list) {
     const bar = e.target.closest('.bar');
     if (!bar) return hideTip();
     const b = list[+bar.dataset.i];
-    showTip(e, `<b>${b.win ? 'Vitória' : 'Derrota'}</b> contra ${esc(b.opp.name)}<br>${esc(b.opp.char)}, ${esc(b.opp.dan ?? '')}<br>${roundsText(b)}${b.me.ratingChange != null ? `, ${signed(b.me.ratingChange)} rating` : ''}<br>${fmtDate.format(new Date(b.date))}`);
+    showTip(e, `<b>${b.win ? 'Vitória' : 'Derrota'}</b> contra ${esc(b.opp.name)}<br>${esc(b.opp.char)}, ${esc(b.opp.dan ?? '')}<br>${roundsText(b)}<br>${fmtDate.format(new Date(b.date))}`);
   };
   strip.onmouseleave = hideTip;
 }
@@ -141,7 +156,7 @@ function renderStats(list) {
   let best = 0, run = 0;
   for (const b of list) { run = b.win ? run + 1 : 0; best = Math.max(best, run); }
   const last = list[n - 1];
-  const rating = state.account !== 'all' && last?.me.rating != null ? last.me.rating + (last.me.ratingChange ?? 0) : null;
+  const tp = state.account !== 'all' ? last?.me.tekkenPower : null;
 
   const items = [
     ['Partidas', n],
@@ -149,7 +164,7 @@ function renderStats(list) {
     ['Sequência atual', n ? `${streak}<small>${lastWin ? (streak === 1 ? 'vitória' : 'vitórias') : (streak === 1 ? 'derrota' : 'derrotas')}</small>` : '—'],
     ['Melhor sequência', `${best}<small>vitórias</small>`],
   ];
-  if (rating != null) items.splice(1, 0, ['Rating atual', Math.round(rating)]);
+  if (tp != null) items.splice(1, 0, ['Tekken Power', fmtNum.format(tp)]);
   $('#stats').innerHTML = items.map(([k, v]) => `<div><dt>${k}</dt><dd>${v}</dd></div>`).join('');
 }
 
@@ -157,24 +172,24 @@ function roundsText(b) {
   return b.me.rounds != null && b.opp.rounds != null ? `${b.me.rounds}–${b.opp.rounds} em rounds` : '';
 }
 
-// ---------- gráfico de rating ----------
+// ---------- gráfico de Tekken Power ----------
 
 let chartObserver;
 function renderChart(list) {
   const box = $('#chart');
   const pts = list
-    .filter((b) => b.me.rating != null)
-    .map((b) => ({ b, y: b.me.rating + (b.me.ratingChange ?? 0), t: new Date(b.date).getTime() }));
+    .filter((b) => b.me.tekkenPower != null)
+    .map((b) => ({ b, y: b.me.tekkenPower, t: new Date(b.date).getTime() }));
 
   if (state.account === 'all' || pts.length < 2) {
-    box.innerHTML = `<p class="chart-empty">${state.account === 'all' ? 'Escolha uma conta acima para ver a evolução do rating.' : 'Ainda não há partidas com rating suficientes para o gráfico.'}</p>`;
+    box.innerHTML = `<p class="chart-empty">${state.account === 'all' ? 'Escolha uma conta acima para ver a evolução do Tekken Power.' : 'Ainda não há partidas suficientes para o gráfico.'}</p>`;
     return;
   }
 
   const draw = () => {
     const W = Math.max(300, box.clientWidth);
     const H = Math.round(Math.min(320, Math.max(220, W * 0.42)));
-    const m = { t: 22, r: 12, b: 28, l: 44 };
+    const m = { t: 22, r: 12, b: 28, l: 62 };
     const ys = pts.map((p) => p.y);
     let lo = Math.min(...ys), hi = Math.max(...ys);
     const step = niceStep((hi - lo) / 4 || 10);
@@ -190,22 +205,22 @@ function renderChart(list) {
     const d = pts.map((p, i) => `${i ? 'L' : 'M'}${x(i).toFixed(1)},${y(p.y).toFixed(1)}`).join('');
 
     box.innerHTML = `
-      <svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Rating de ${Math.round(ys[0])} para ${Math.round(ys.at(-1))} em ${pts.length} partidas; pico de ${Math.round(ys[peakI])}.">
+      <svg viewBox="0 0 ${W} ${H}" width="${W}" height="${H}" role="img" aria-label="Tekken Power de ${fmtNum.format(ys[0])} para ${fmtNum.format(ys.at(-1))} em ${pts.length} partidas; pico de ${fmtNum.format(ys[peakI])}.">
         <g class="grid">${ticks.map((v) => `<line x1="${m.l}" x2="${W - m.r}" y1="${y(v)}" y2="${y(v)}"/>`).join('')}</g>
         <g class="axis">
-          ${ticks.map((v) => `<text x="${m.l - 8}" y="${y(v) + 4}" text-anchor="end">${v}</text>`).join('')}
+          ${ticks.map((v) => `<text x="${m.l - 8}" y="${y(v) + 4}" text-anchor="end">${fmtNum.format(v)}</text>`).join('')}
           ${xt.map((i, k) => `<text x="${x(i)}" y="${H - 6}" text-anchor="${k === 0 ? 'start' : k === xt.length - 1 ? 'end' : 'middle'}">${fmtDay.format(pts[i].t)}</text>`).join('')}
         </g>
         <path class="line" d="${d}"/>
-        <text class="peak" x="${x(peakI)}" y="${y(ys[peakI]) - 9}" text-anchor="${peakI > pts.length * 0.85 ? 'end' : peakI < pts.length * 0.15 ? 'start' : 'middle'}">pico ${Math.round(ys[peakI])}</text>
+        <text class="peak" x="${x(peakI)}" y="${y(ys[peakI]) - 9}" text-anchor="${peakI > pts.length * 0.85 ? 'end' : peakI < pts.length * 0.15 ? 'start' : 'middle'}">pico ${fmtNum.format(ys[peakI])}</text>
         <line class="cross" y1="${m.t}" y2="${H - m.b}" visibility="hidden"/>
         <circle class="dot" r="5" visibility="hidden"/>
         <rect x="${m.l}" y="0" width="${W - m.l - m.r}" height="${H}" fill="transparent"/>
       </svg>
       <dl class="chart-sum">
-        <div><dt>Primeira registrada</dt><dd>${Math.round(ys[0])}</dd></div>
-        <div><dt>Pico</dt><dd>${Math.round(ys[peakI])}</dd></div>
-        <div><dt>Variação no período</dt><dd>${signed(Math.round(ys.at(-1) - ys[0]))}</dd></div>
+        <div><dt>Primeira registrada</dt><dd>${fmtNum.format(ys[0])}</dd></div>
+        <div><dt>Pico</dt><dd>${fmtNum.format(ys[peakI])}</dd></div>
+        <div><dt>Variação no período</dt><dd>${signedFmt(ys.at(-1) - ys[0])}</dd></div>
       </dl>`;
 
     const svg = $('svg', box), cross = $('.cross', box), dot = $('.dot', box);
@@ -216,7 +231,7 @@ function renderChart(list) {
       const p = pts[i];
       cross.setAttribute('x1', x(i)); cross.setAttribute('x2', x(i)); cross.setAttribute('visibility', 'visible');
       dot.setAttribute('cx', x(i)); dot.setAttribute('cy', y(p.y)); dot.setAttribute('visibility', 'visible');
-      showTip(e, `<b>${Math.round(p.y)}</b> (${signed(p.b.me.ratingChange ?? 0)})<br>${p.b.win ? 'Vitória' : 'Derrota'} contra ${esc(p.b.opp.name)}, ${esc(p.b.opp.char)}<br>${fmtDate.format(p.t)}`);
+      showTip(e, `<b>${fmtNum.format(p.y)}</b>${p.b.me.tpDelta != null ? ` (${signedFmt(p.b.me.tpDelta)})` : ''}<br>${p.b.win ? 'Vitória' : 'Derrota'} contra ${esc(p.b.opp.name)}, ${esc(p.b.opp.char)}<br>${fmtDate.format(p.t)}`);
     };
     svg.onmouseleave = () => { cross.setAttribute('visibility', 'hidden'); dot.setAttribute('visibility', 'hidden'); hideTip(); };
   };
@@ -281,13 +296,13 @@ function renderHistory(list) {
 
   const showAcc = state.account === 'all';
   $('#rows').innerHTML = rows.slice(0, state.shown).map((b) => {
-    const dch = b.me.ratingChange;
+    const dtp = b.me.tpDelta;
     return `<tr>
-      <td title="${fmtDate.format(new Date(b.date))}">${ago(b.date)}<small>${esc(b.type)}${showAcc ? `, com ${esc(b.me.char)}` : ''}</small></td>
+      <td title="${fmtDate.format(new Date(b.date))}">${ago(b.date)}<small>${esc(b.type)}${showAcc ? `, na ${esc(splitName(b.me.name).tag)}` : ''}</small></td>
       <td><span class="res ${b.win ? 'w' : 'l'}">${b.win ? 'Vitória' : 'Derrota'}</span></td>
       <td>${esc(b.opp.name)}<small>${esc(b.opp.char)}${b.opp.dan ? `, ${esc(b.opp.dan)}` : ''}</small></td>
       <td class="num">${b.me.rounds ?? '–'}–${b.opp.rounds ?? '–'}</td>
-      <td class="num">${dch == null ? '—' : `<span class="delta ${dch >= 0 ? 'up' : 'down'}">${signed(dch)}</span>`}${b.me.rating != null ? `<small>${Math.round(b.me.rating + (dch ?? 0))}</small>` : ''}</td>
+      <td class="num">${b.me.tekkenPower == null ? '—' : fmtNum.format(b.me.tekkenPower)}${dtp ? `<small class="delta ${dtp > 0 ? 'up' : 'down'}">${signedFmt(dtp)}</small>` : ''}</td>
     </tr>`;
   }).join('');
   $('#empty').hidden = rows.length > 0;
