@@ -1,7 +1,397 @@
 {
-  "updatedAt": "2026-10-27T18:05:28.653Z",
-  "count": 117,
+  "updatedAt": "2026-10-27T22:16:55.406Z",
+  "count": 132,
   "battles": [
+    {
+      "id": "2026-10-26T22:05:54Z-43nJyH98rnQf-38A89ANqJyN4",
+      "account": "38A89ANqJyN4",
+      "date": "2026-10-26T22:05:54.000Z",
+      "type": "Ranqueada",
+      "stage": "Phoenix Gate",
+      "win": true,
+      "me": {
+        "name": "PAC | BushinFRV",
+        "polarisId": "38A89ANqJyN4",
+        "region": "Americas",
+        "char": "Dragunov",
+        "dan": "God of Destruction I",
+        "tekkenPower": 362621,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "SickTexugo",
+        "polarisId": "43nJyH98rnQf",
+        "region": "Americas",
+        "char": "Shaheen",
+        "dan": "God of Destruction",
+        "tekkenPower": 377538,
+        "rounds": 2
+      }
+    },
+    {
+      "id": "2026-10-26T21:59:57Z-38A89ANqJyN4-2rD34afY2Ned",
+      "account": "38A89ANqJyN4",
+      "date": "2026-10-26T21:59:57.000Z",
+      "type": "Ranqueada",
+      "stage": "Baobab Horizon",
+      "win": true,
+      "me": {
+        "name": "PAC | BushinFRV",
+        "polarisId": "38A89ANqJyN4",
+        "region": "Americas",
+        "char": "Dragunov",
+        "dan": "God of Destruction I",
+        "tekkenPower": 363100,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Tanya Degurchef",
+        "polarisId": "2rD34afY2Ned",
+        "region": "Americas",
+        "char": "Steve",
+        "dan": "God of Destruction II",
+        "tekkenPower": 398229,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "2026-10-26T21:56:14Z-3RM8BiMqfgd8-38A89ANqJyN4",
+      "account": "38A89ANqJyN4",
+      "date": "2026-10-26T21:56:14.000Z",
+      "type": "Ranqueada",
+      "stage": "Pacman Map",
+      "win": false,
+      "me": {
+        "name": "PAC | BushinFRV",
+        "polarisId": "38A89ANqJyN4",
+        "region": "Americas",
+        "char": "Dragunov",
+        "dan": "God of Destruction I",
+        "tekkenPower": 362619,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "ESTRALANTE",
+        "polarisId": "3RM8BiMqfgd8",
+        "region": "Americas",
+        "char": "Steve",
+        "dan": "God of Destruction III",
+        "tekkenPower": 367841,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "2026-10-26T21:53:13Z-3RM8BiMqfgd8-38A89ANqJyN4",
+      "account": "38A89ANqJyN4",
+      "date": "2026-10-26T21:53:13.000Z",
+      "type": "Ranqueada",
+      "stage": "Coliseum of Fate",
+      "win": false,
+      "me": {
+        "name": "PAC | BushinFRV",
+        "polarisId": "38A89ANqJyN4",
+        "region": "Americas",
+        "char": "Dragunov",
+        "dan": "God of Destruction I",
+        "tekkenPower": 362498,
+        "rounds": 2
+      },
+      "opp": {
+        "name": "ESTRALANTE",
+        "polarisId": "3RM8BiMqfgd8",
+        "region": "Americas",
+        "char": "Steve",
+        "dan": "God of Destruction III",
+        "tekkenPower": 367840,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "2026-10-26T21:49:33Z-38A89ANqJyN4-2bGetnh3mYyB",
+      "account": "38A89ANqJyN4",
+      "date": "2026-10-26T21:49:33.000Z",
+      "type": "Ranqueada",
+      "stage": "Coliseum of Fate",
+      "win": true,
+      "me": {
+        "name": "PAC | BushinFRV",
+        "polarisId": "38A89ANqJyN4",
+        "region": "Americas",
+        "char": "Dragunov",
+        "dan": "God of Destruction I",
+        "tekkenPower": 362137,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Dr.X",
+        "polarisId": "2bGetnh3mYyB",
+        "region": "Americas",
+        "char": "Law",
+        "dan": "God of Destruction IV",
+        "tekkenPower": 390360,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "2026-10-26T21:47:19Z-38A89ANqJyN4-2bGetnh3mYyB",
+      "account": "38A89ANqJyN4",
+      "date": "2026-10-26T21:47:19.000Z",
+      "type": "Ranqueada",
+      "stage": "Coliseum of Fate",
+      "win": false,
+      "me": {
+        "name": "PAC | BushinFRV",
+        "polarisId": "38A89ANqJyN4",
+        "region": "Americas",
+        "char": "Dragunov",
+        "dan": "God of Destruction I",
+        "tekkenPower": 362016,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "Dr.X",
+        "polarisId": "2bGetnh3mYyB",
+        "region": "Americas",
+        "char": "Law",
+        "dan": "God of Destruction IV",
+        "tekkenPower": 390599,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "2026-10-26T21:44:33Z-38A89ANqJyN4-4FMYAafaDAG6",
+      "account": "38A89ANqJyN4",
+      "date": "2026-10-26T21:44:33.000Z",
+      "type": "Ranqueada",
+      "stage": "Celebration On The Seine",
+      "win": false,
+      "me": {
+        "name": "PAC | BushinFRV",
+        "polarisId": "38A89ANqJyN4",
+        "region": "Americas",
+        "char": "Dragunov",
+        "dan": "God of Destruction I",
+        "tekkenPower": 361895,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "SonGamer",
+        "polarisId": "4FMYAafaDAG6",
+        "region": "Americas",
+        "char": "Zafina",
+        "dan": "God of Destruction",
+        "tekkenPower": 413567,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "2026-10-26T21:38:20Z-68ri494yJNTJ-38A89ANqJyN4",
+      "account": "38A89ANqJyN4",
+      "date": "2026-10-26T21:38:20.000Z",
+      "type": "Ranqueada",
+      "stage": "Yakushima",
+      "win": true,
+      "me": {
+        "name": "PAC | BushinFRV",
+        "polarisId": "38A89ANqJyN4",
+        "region": "Americas",
+        "char": "Dragunov",
+        "dan": "God of Destruction I",
+        "tekkenPower": 362254,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "B4nkai",
+        "polarisId": "68ri494yJNTJ",
+        "region": "Americas",
+        "char": "Kunimitsu",
+        "dan": "God of Destruction I",
+        "tekkenPower": 364997,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "2026-10-26T21:35:47Z-68ri494yJNTJ-38A89ANqJyN4",
+      "account": "38A89ANqJyN4",
+      "date": "2026-10-26T21:35:47.000Z",
+      "type": "Ranqueada",
+      "stage": "Yakushima",
+      "win": true,
+      "me": {
+        "name": "PAC | BushinFRV",
+        "polarisId": "38A89ANqJyN4",
+        "region": "Americas",
+        "char": "Dragunov",
+        "dan": "God of Destruction I",
+        "tekkenPower": 362253,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "B4nkai",
+        "polarisId": "68ri494yJNTJ",
+        "region": "Americas",
+        "char": "Kunimitsu",
+        "dan": "God of Destruction I",
+        "tekkenPower": 364996,
+        "rounds": 1
+      }
+    },
+    {
+      "id": "2026-10-26T21:29:00Z-38A89ANqJyN4-5mgqRGyFdeT8",
+      "account": "38A89ANqJyN4",
+      "date": "2026-10-26T21:29:00.000Z",
+      "type": "Ranqueada",
+      "stage": "Arena Underground",
+      "win": true,
+      "me": {
+        "name": "PAC | BushinFRV",
+        "polarisId": "38A89ANqJyN4",
+        "region": "Americas",
+        "char": "Dragunov",
+        "dan": "God of Destruction I",
+        "tekkenPower": 362012,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "PaoDuroMacMonei",
+        "polarisId": "5mgqRGyFdeT8",
+        "region": "Americas",
+        "char": "Bryan",
+        "dan": "Tekken God Supreme",
+        "tekkenPower": 255252,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "2026-10-26T21:26:26Z-38A89ANqJyN4-5mgqRGyFdeT8",
+      "account": "38A89ANqJyN4",
+      "date": "2026-10-26T21:26:26.000Z",
+      "type": "Ranqueada",
+      "stage": "Midnight Siege",
+      "win": true,
+      "me": {
+        "name": "PAC | BushinFRV",
+        "polarisId": "38A89ANqJyN4",
+        "region": "Americas",
+        "char": "Dragunov",
+        "dan": "God of Destruction I",
+        "tekkenPower": 361891,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "PaoDuroMacMonei",
+        "polarisId": "5mgqRGyFdeT8",
+        "region": "Americas",
+        "char": "Bryan",
+        "dan": "Tekken God Supreme",
+        "tekkenPower": 255251,
+        "rounds": 2
+      }
+    },
+    {
+      "id": "2026-10-26T21:18:57Z-3mHq8b36Yed8-38A89ANqJyN4",
+      "account": "38A89ANqJyN4",
+      "date": "2026-10-26T21:18:57.000Z",
+      "type": "Ranqueada",
+      "stage": "Celebration On The Seine",
+      "win": true,
+      "me": {
+        "name": "PAC | BushinFRV",
+        "polarisId": "38A89ANqJyN4",
+        "region": "Americas",
+        "char": "Dragunov",
+        "dan": "God of Destruction I",
+        "tekkenPower": 361650,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Dametucocita",
+        "polarisId": "3mHq8b36Yed8",
+        "region": "Americas",
+        "char": "Jin",
+        "dan": "God of Destruction",
+        "tekkenPower": 349012,
+        "rounds": 0
+      }
+    },
+    {
+      "id": "2026-10-26T21:17:08Z-3mHq8b36Yed8-38A89ANqJyN4",
+      "account": "38A89ANqJyN4",
+      "date": "2026-10-26T21:17:08.000Z",
+      "type": "Ranqueada",
+      "stage": "Celebration On The Seine",
+      "win": true,
+      "me": {
+        "name": "PAC | BushinFRV",
+        "polarisId": "38A89ANqJyN4",
+        "region": "Americas",
+        "char": "Dragunov",
+        "dan": "God of Destruction I",
+        "tekkenPower": 361169,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "Dametucocita",
+        "polarisId": "3mHq8b36Yed8",
+        "region": "Americas",
+        "char": "Jin",
+        "dan": "God of Destruction",
+        "tekkenPower": 349371,
+        "rounds": 2
+      }
+    },
+    {
+      "id": "2026-10-26T21:13:10Z-38A89ANqJyN4-4nN3NAQ4GrJQ",
+      "account": "38A89ANqJyN4",
+      "date": "2026-10-26T21:13:10.000Z",
+      "type": "Ranqueada",
+      "stage": "Ortiz Farm",
+      "win": false,
+      "me": {
+        "name": "PAC | BushinFRV",
+        "polarisId": "38A89ANqJyN4",
+        "region": "Americas",
+        "char": "Dragunov",
+        "dan": "God of Destruction I",
+        "tekkenPower": 361048,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "ЗАКОЛОТ",
+        "polarisId": "4nN3NAQ4GrJQ",
+        "region": "Americas",
+        "char": "Dragunov",
+        "dan": "God of Destruction III",
+        "tekkenPower": 402154,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "2026-10-26T21:10:03Z-38A89ANqJyN4-4nN3NAQ4GrJQ",
+      "account": "38A89ANqJyN4",
+      "date": "2026-10-26T21:10:03.000Z",
+      "type": "Ranqueada",
+      "stage": "Ortiz Farm",
+      "win": false,
+      "me": {
+        "name": "PAC | BushinFRV",
+        "polarisId": "38A89ANqJyN4",
+        "region": "Americas",
+        "char": "Dragunov",
+        "dan": "God of Destruction I",
+        "tekkenPower": 361647,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "ЗАКОЛОТ",
+        "polarisId": "4nN3NAQ4GrJQ",
+        "region": "Americas",
+        "char": "Dragunov",
+        "dan": "God of Destruction III",
+        "tekkenPower": 402033,
+        "rounds": 3
+      }
+    },
     {
       "id": "2026-10-26T01:33:18Z-38A89ANqJyN4-63JBE9HimGBB",
       "account": "38A89ANqJyN4",
