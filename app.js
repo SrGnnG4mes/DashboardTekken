@@ -7,6 +7,7 @@ const esc = (s) => String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '
 const state = { account: null, type: '', sort: 'games', q: '', char: '', res: '', shown: 30 };
 let ALL = [];
 let PROFILES = [];
+let ACCOUNTS = [];
 
 const fmtDate = new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' });
 const fmtDay = new Intl.DateTimeFormat('pt-BR', { day: '2-digit', month: 'short' });
@@ -45,8 +46,9 @@ async function load() {
   const order = PROFILES.map((x) => x.account);
   const rank = (a) => (order.includes(a) ? order.indexOf(a) : order.length);
   const accounts = [...new Set(ALL.map((x) => x.account))].sort((a, c) => rank(a) - rank(c) || a.localeCompare(c));
-  state.account = accounts[0] ?? 'all';
-  buildAccounts(accounts);
+  ACCOUNTS = accounts;
+  state.account = accountFromUrl() ?? accounts[0];
+  buildProfiles();
   buildTypes();
   buildCharFilter();
   render();
@@ -54,7 +56,7 @@ async function load() {
 
 // ---------- seleção ----------
 
-const scoped = () => ALL.filter((b) => (state.account === 'all' || b.account === state.account) && (!state.type || b.type === state.type));
+const scoped = () => ALL.filter((b) => b.account === state.account && (!state.type || b.type === state.type));
 const profileFor = (acc) => PROFILES.find((p) => p.account === acc) ?? PROFILES[0];
 
 // "PAC | BushinFRV" → { prefix: 'PAC', tag: 'BushinFRV' }
@@ -63,32 +65,57 @@ function splitName(name) {
   return m ? { prefix: m[1], tag: m[2] } : { prefix: '', tag: String(name ?? '') };
 }
 
-function accountLabel(acc, i) {
-  const last = [...ALL].reverse().find((b) => b.account === acc);
-  const p = profileFor(acc);
-  const name = last?.me.name ?? (p?.account === acc ? p.name : undefined);
-  return name ? splitName(name).tag : `Conta ${i + 1}`;
-}
-function mode(arr) {
-  const m = new Map();
-  for (const x of arr) m.set(x, (m.get(x) ?? 0) + 1);
-  return [...m].sort((a, b) => b[1] - a[1])[0]?.[0];
+function lastOf(acc) {
+  for (let i = ALL.length - 1; i >= 0; i--) if (ALL[i].account === acc) return ALL[i];
+  return undefined;
 }
 
-function buildAccounts(accounts) {
-  const nav = $('#accounts');
-  if (accounts.length < 2) { nav.hidden = true; return; }
-  const opts = [...accounts.map((a, i) => [a, accountLabel(a, i)]), ['all', 'Todas']];
-  nav.innerHTML = opts.map(([v, l]) => `<button type="button" data-acc="${esc(v)}" aria-pressed="${v === state.account}">${esc(l)}</button>`).join('');
-  nav.addEventListener('click', (e) => {
-    const btn = e.target.closest('button');
-    if (!btn) return;
-    state.account = btn.dataset.acc;
+function accountLabel(acc) {
+  const p = profileFor(acc);
+  const name = lastOf(acc)?.me.name ?? (p?.account === acc ? p.name : undefined);
+  return name ? splitName(name).tag : acc;
+}
+
+// Cada conta é um perfil com endereço próprio: ?perfil=bushinfrv
+const slugOf = (acc) => accountLabel(acc).toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || acc;
+
+function accountFromUrl() {
+  const want = new URLSearchParams(location.search).get('perfil')?.toLowerCase();
+  if (!want) return undefined;
+  return ACCOUNTS.find((a) => slugOf(a) === want || a.toLowerCase() === want.replace(/-/g, ''));
+}
+
+function buildProfiles() {
+  const nav = $('#profiles');
+  if (ACCOUNTS.length < 2) { nav.hidden = true; return; }
+  const paint = () => {
+    nav.innerHTML = ACCOUNTS.map((a) => {
+      const last = lastOf(a);
+      const current = a === state.account;
+      return `<a href="?perfil=${esc(slugOf(a))}" data-acc="${esc(a)}"${current ? ' aria-current="page"' : ''}>
+        <span class="pf-name">${esc(accountLabel(a))}</span>
+        <span class="pf-meta">${esc(last?.me.char ?? '')}${last?.me.dan ? `, ${esc(last.me.dan)}` : ''}</span>
+      </a>`;
+    }).join('');
+  };
+  paint();
+  const open = (acc, push) => {
+    if (!acc || acc === state.account) return;
+    state.account = acc;
     state.shown = 30;
-    nav.querySelectorAll('button').forEach((b) => b.setAttribute('aria-pressed', b === btn));
+    if (push) history.pushState({ acc }, '', `?perfil=${slugOf(acc)}`);
+    paint();
     buildCharFilter();
     render();
+    window.scrollTo({ top: 0 });
+  };
+  nav.addEventListener('click', (e) => {
+    const a = e.target.closest('a[data-acc]');
+    if (!a || e.metaKey || e.ctrlKey || e.shiftKey) return;
+    e.preventDefault();
+    open(a.dataset.acc, true);
   });
+  addEventListener('popstate', () => open(accountFromUrl() ?? ACCOUNTS[0], false));
 }
 
 function buildTypes() {
@@ -122,6 +149,7 @@ function buildCharFilter() {
 function render() {
   const list = scoped();
   renderHero(list);
+  renderPentagon(list);
   renderStrip(list);
   renderStats(list);
   renderChart(list);
@@ -130,15 +158,18 @@ function render() {
 }
 
 function renderHero(list) {
-  const acc = state.account === 'all' ? (PROFILES[0]?.account ?? list.at(-1)?.account) : state.account;
+  const acc = state.account;
   const p = profileFor(acc);
-  const last = [...list].reverse().find((b) => b.account === acc) ?? list[list.length - 1];
+  const last = list.at(-1) ?? lastOf(acc);
   const { prefix, tag } = splitName(last?.me.name ?? p?.name ?? 'BushinFRV');
   $('#gamertag').textContent = tag;
   $('#prefix').textContent = prefix;
   $('#prefix').hidden = !prefix;
   $('#rank').textContent = last?.me.dan ?? p?.dan ?? '—';
   $('#main').textContent = last?.me.char ?? p?.main ?? '—';
+  const id = String(acc ?? '');
+  const shownId = id.length === 12 ? `${id.slice(0, 4)}-${id.slice(4, 8)}-${id.slice(8)}` : id;
+  $('#meta').textContent = [`Tekken ID ${shownId}`, last?.me.region].filter(Boolean).join(', ');
   document.title = `${$('#gamertag').textContent} no Tekken 8`;
 }
 
@@ -175,7 +206,7 @@ function renderStats(list) {
   let best = 0, run = 0;
   for (const b of list) { run = b.win ? run + 1 : 0; best = Math.max(best, run); }
   const last = list[n - 1];
-  const tp = state.account !== 'all' ? last?.me.tekkenPower : null;
+  const tp = last?.me.tekkenPower;
 
   const items = [
     ['Partidas', n],
@@ -191,6 +222,85 @@ function roundsText(b) {
   return b.me.rounds != null && b.opp.rounds != null ? `${b.me.rounds}–${b.opp.rounds} em rounds` : '';
 }
 
+// ---------- pentágono de status ----------
+// Cinco notas de 0 a 100 calculadas das partidas do filtro atual.
+
+function pentagonAxes(list) {
+  const hasRounds = (b) => b.me.rounds != null && b.opp.rounds != null;
+  const rate = (arr) => ({ n: arr.length, w: arr.filter((b) => b.win).length });
+
+  const all = rate(list);
+  let rw = 0, rt = 0;
+  for (const b of list) if (hasRounds(b)) { rw += b.me.rounds; rt += b.me.rounds + b.opp.rounds; }
+  // Luta que foi para o último round: placar com diferença de 1 e o perdedor a 1 round da vitória (3–2, 2–1…).
+  const decisive = rate(list.filter((b) => hasRounds(b) && Math.abs(b.me.rounds - b.opp.rounds) === 1 && Math.min(b.me.rounds, b.opp.rounds) >= 1));
+  const stronger = rate(list.filter((b) => b.me.tekkenPower != null && b.opp.tekkenPower != null && b.opp.tekkenPower > b.me.tekkenPower));
+  const byChar = new Map();
+  for (const b of list) {
+    const m = byChar.get(b.opp.char) ?? { n: 0, w: 0 };
+    m.n++; if (b.win) m.w++;
+    byChar.set(b.opp.char, m);
+  }
+  const chars = [...byChar.values()];
+  const good = chars.filter((m) => m.w / m.n >= 0.5).length;
+
+  const v = (w, n) => (n ? Math.round((w / n) * 100) : null);
+  return [
+    { label: 'Vitórias', value: v(all.w, all.n), detail: `${all.w} de ${all.n} partidas ganhas` },
+    { label: 'Rounds', value: v(rw, rt), detail: `${rw} de ${rt} rounds ganhos` },
+    { label: 'Round decisivo', value: v(decisive.w, decisive.n), detail: `${decisive.w} de ${decisive.n} lutas que foram ao último round` },
+    { label: 'Contra mais fortes', value: v(stronger.w, stronger.n), detail: `${stronger.w} de ${stronger.n} contra Tekken Power maior que o seu` },
+    { label: 'Matchups', value: v(good, chars.length), detail: `50% ou mais contra ${good} de ${chars.length} personagens` },
+  ];
+}
+
+function renderPentagon(list) {
+  const fig = $('#pentagon');
+  const axes = pentagonAxes(list);
+  const W = 340, H = 300, cx = W / 2, cy = 158, R = 96;
+  const ang = (i) => -Math.PI / 2 + (i * 2 * Math.PI) / axes.length;
+  const pt = (i, r) => [cx + Math.cos(ang(i)) * r, cy + Math.sin(ang(i)) * r];
+  const poly = (r) => axes.map((_, i) => pt(i, r).map((n) => n.toFixed(1)).join(',')).join(' ');
+  const shape = axes.map((a, i) => pt(i, (R * (a.value ?? 0)) / 100).map((n) => n.toFixed(1)).join(',')).join(' ');
+
+  const labels = axes.map((a, i) => {
+    const [x, y] = pt(i, R + 22);
+    const anchor = Math.abs(x - cx) < 8 ? 'middle' : x > cx ? 'start' : 'end';
+    const dy = i === 0 ? -14 : 0;
+    return `<g class="pg-label" transform="translate(${x.toFixed(1)},${(y + dy).toFixed(1)})">
+      <text class="pg-value" text-anchor="${anchor}" y="0">${a.value ?? '—'}</text>
+      <text class="pg-name" text-anchor="${anchor}" y="15">${esc(a.label)}</text>
+    </g>`;
+  }).join('');
+
+  const dots = axes.map((a, i) => {
+    const [x, y] = pt(i, (R * (a.value ?? 0)) / 100);
+    return `<circle class="pg-dot" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="4.5"/>
+      <circle class="pg-hit" data-i="${i}" cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="16"/>`;
+  }).join('');
+
+  const summary = axes.map((a) => `${a.label} ${a.value ?? 'sem dados'}`).join(', ');
+  fig.innerHTML = `
+    <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Pentágono de status: ${esc(summary)}.">
+      ${[25, 75, 100].map((r) => `<polygon class="pg-ring" points="${poly((R * r) / 100)}"/>`).join('')}
+      <polygon class="pg-ring pg-half" points="${poly(R / 2)}"/>
+      ${axes.map((_, i) => { const [x, y] = pt(i, R); return `<line class="pg-axis" x1="${cx}" y1="${cy}" x2="${x.toFixed(1)}" y2="${y.toFixed(1)}"/>`; }).join('')}
+      <polygon class="pg-shape" points="${shape}"/>
+      ${dots}
+      ${labels}
+    </svg>
+    <figcaption>De 0 a 100, a partir de ${list.length} ${list.length === 1 ? 'partida' : 'partidas'}${state.type ? ` (${esc(state.type.toLowerCase())})` : ''}. A linha tracejada marca 50.</figcaption>`;
+
+  const svg = $('svg', fig);
+  svg.onmousemove = (e) => {
+    const hit = e.target.closest('.pg-hit');
+    if (!hit) return hideTip();
+    const a = axes[+hit.dataset.i];
+    showTip(e, `<b>${esc(a.label)}: ${a.value ?? '—'}</b><br>${esc(a.detail)}`);
+  };
+  svg.onmouseleave = hideTip;
+}
+
 // ---------- gráfico de Tekken Power ----------
 
 let chartObserver;
@@ -200,8 +310,8 @@ function renderChart(list) {
     .filter((b) => b.me.tekkenPower != null)
     .map((b) => ({ b, y: b.me.tekkenPower, t: new Date(b.date).getTime() }));
 
-  if (state.account === 'all' || pts.length < 2) {
-    box.innerHTML = `<p class="chart-empty">${state.account === 'all' ? 'Escolha uma conta acima para ver a evolução do Tekken Power.' : 'Ainda não há partidas suficientes para o gráfico.'}</p>`;
+  if (pts.length < 2) {
+    box.innerHTML = '<p class="chart-empty">Ainda não há partidas suficientes para o gráfico.</p>';
     return;
   }
 
@@ -317,11 +427,10 @@ function renderHistory(list) {
     (!state.res || (state.res === 'w') === b.win)
   ).reverse();
 
-  const showAcc = state.account === 'all';
   $('#rows').innerHTML = rows.slice(0, state.shown).map((b) => {
     const dtp = b.me.tpDelta;
     return `<tr>
-      <td title="${fmtDate.format(new Date(b.date))}">${ago(b.date)}<small>${esc(b.type)}${showAcc ? `, na ${esc(splitName(b.me.name).tag)}` : ''}</small></td>
+      <td title="${fmtDate.format(new Date(b.date))}">${ago(b.date)}<small>${esc(b.type)}</small></td>
       <td><span class="res ${b.win ? 'w' : 'l'}">${b.win ? 'Vitória' : 'Derrota'}</span></td>
       <td>${esc(b.opp.name)}<small>${esc(b.opp.char)}${b.opp.dan ? `, ${esc(b.opp.dan)}` : ''}</small></td>
       <td class="num">${b.me.rounds ?? '–'}–${b.opp.rounds ?? '–'}</td>

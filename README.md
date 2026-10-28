@@ -2,6 +2,24 @@
 
 Meu perfil de Tekken 8: forma recente, evolução do rating, aproveitamento contra cada personagem e histórico de partidas. Os dados vêm do [ewgf.gg](https://ewgf.gg).
 
+## Perfis
+
+Cada conta tem o próprio endereço: `?perfil=bushinfrv`, `?perfil=larper`. A primeira conta em `TEKKEN_IDS` é a que abre por padrão.
+
+## Pentágono de status
+
+Calculado a partir das partidas do filtro escolhido (Todas, Ranqueadas ou Sala), de 0 a 100:
+
+| Eixo | Como é calculado |
+|---|---|
+| Vitórias | % de partidas ganhas |
+| Rounds | % de rounds ganhos |
+| Round decisivo | % de vitórias nas lutas que foram ao último round (3–2, 2–3) |
+| Contra mais fortes | % de vitórias contra oponentes com Tekken Power maior |
+| Matchups | % dos personagens enfrentados em que você tem 50% ou mais |
+
+O pentágono do próprio ewgf não está disponível pela API no plano grátis, por isso este é calculado aqui.
+
 ## Como funciona
 
 ```

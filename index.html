@@ -4,16 +4,18 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BushinFRV no Tekken 8</title>
-  <meta name="description" content="Partidas ranqueadas de Tekken 8 do BushinFRV, com dados do ewgf.gg.">
+  <meta name="description" content="Perfis de Tekken 8 do BushinFRV: partidas, Tekken Power e pentágono de status, com dados do ewgf.gg.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
   <div class="sample" id="sample" hidden>
     Você está vendo dados de exemplo. Os reais aparecem depois que o GitHub Action rodar com o seu token.
   </div>
+
+  <nav class="profiles" id="profiles" aria-label="Perfis"></nav>
 
   <header class="hero">
     <div class="hero-top">
@@ -24,11 +26,10 @@
           <span class="rank" id="rank">—</span>
           <span id="main">—</span>
         </p>
-      </div>
-      <div class="pickers">
-        <nav class="accounts" id="accounts" aria-label="Conta"></nav>
+        <p class="meta" id="meta"></p>
         <nav class="accounts" id="types" aria-label="Tipo de partida"></nav>
       </div>
+      <figure class="pentagon" id="pentagon"></figure>
     </div>
 
     <figure class="form">
@@ -93,6 +94,6 @@
   </footer>
 
   <div class="tip" id="tip" role="tooltip" hidden></div>
-  <script type="module" src="app.js?v=4"></script>
+  <script type="module" src="app.js?v=5"></script>
 </body>
 </html>
