@@ -1,7 +1,241 @@
 {
-  "updatedAt": "2026-11-01T22:04:18.619Z",
-  "count": 194,
+  "updatedAt": "2026-11-02T06:10:06.005Z",
+  "count": 203,
   "battles": [
+    {
+      "id": "2026-11-01T00:31:07Z-38A89ANqJyN4-63JBE9HimGBB",
+      "account": "38A89ANqJyN4",
+      "date": "2026-11-01T00:31:07.000Z",
+      "type": "Partida de sala",
+      "stage": "Genmaji Temple",
+      "win": false,
+      "me": {
+        "name": "PAC | BushinFRV",
+        "polarisId": "38A89ANqJyN4",
+        "region": "Americas",
+        "char": "Kazuya",
+        "dan": "Tekken God Supreme",
+        "tekkenPower": 362742,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "PAC | Kyra",
+        "polarisId": "63JBE9HimGBB",
+        "region": "Americas",
+        "char": "Kazuya",
+        "dan": "God of Destruction",
+        "tekkenPower": 417737,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "2026-11-01T00:28:35Z-38A89ANqJyN4-63JBE9HimGBB",
+      "account": "38A89ANqJyN4",
+      "date": "2026-11-01T00:28:35.000Z",
+      "type": "Partida de sala",
+      "stage": "Genmaji Temple",
+      "win": false,
+      "me": {
+        "name": "PAC | BushinFRV",
+        "polarisId": "38A89ANqJyN4",
+        "region": "Americas",
+        "char": "Kazuya",
+        "dan": "Tekken God Supreme",
+        "tekkenPower": 362742,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "PAC | Kyra",
+        "polarisId": "63JBE9HimGBB",
+        "region": "Americas",
+        "char": "Kazuya",
+        "dan": "God of Destruction",
+        "tekkenPower": 417737,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "2026-11-01T00:03:04Z-38A89ANqJyN4-4gyH6MEJai88",
+      "account": "38A89ANqJyN4",
+      "date": "2026-11-01T00:03:04.000Z",
+      "type": "Partida de sala",
+      "stage": "Rebel Hangar",
+      "win": false,
+      "me": {
+        "name": "PAC | BushinFRV",
+        "polarisId": "38A89ANqJyN4",
+        "region": "Americas",
+        "char": "Dragunov",
+        "dan": "God of Destruction I",
+        "tekkenPower": 362742,
+        "rounds": 2
+      },
+      "opp": {
+        "name": "PAC | Perdes",
+        "polarisId": "4gyH6MEJai88",
+        "region": "Americas",
+        "char": "Bryan",
+        "dan": "God of Destruction II",
+        "tekkenPower": 381126,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "2026-10-31T23:58:51Z-38A89ANqJyN4-4gyH6MEJai88",
+      "account": "38A89ANqJyN4",
+      "date": "2026-10-31T23:58:51.000Z",
+      "type": "Partida de sala",
+      "stage": "Rebel Hangar",
+      "win": false,
+      "me": {
+        "name": "PAC | BushinFRV",
+        "polarisId": "38A89ANqJyN4",
+        "region": "Americas",
+        "char": "Dragunov",
+        "dan": "God of Destruction I",
+        "tekkenPower": 362742,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "PAC | Perdes",
+        "polarisId": "4gyH6MEJai88",
+        "region": "Americas",
+        "char": "Bryan",
+        "dan": "God of Destruction II",
+        "tekkenPower": 381126,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "2026-10-31T23:34:40Z-38A89ANqJyN4-63JBE9HimGBB",
+      "account": "38A89ANqJyN4",
+      "date": "2026-10-31T23:34:40.000Z",
+      "type": "Partida de sala",
+      "stage": "Urban Square Evening",
+      "win": false,
+      "me": {
+        "name": "PAC | BushinFRV",
+        "polarisId": "38A89ANqJyN4",
+        "region": "Americas",
+        "char": "Dragunov",
+        "dan": "God of Destruction I",
+        "tekkenPower": 362742,
+        "rounds": 2
+      },
+      "opp": {
+        "name": "PAC | Kyra",
+        "polarisId": "63JBE9HimGBB",
+        "region": "Americas",
+        "char": "King",
+        "dan": "God of Destruction",
+        "tekkenPower": 417737,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "2026-10-31T23:31:50Z-38A89ANqJyN4-63JBE9HimGBB",
+      "account": "38A89ANqJyN4",
+      "date": "2026-10-31T23:31:50.000Z",
+      "type": "Partida de sala",
+      "stage": "Urban Square Evening",
+      "win": false,
+      "me": {
+        "name": "PAC | BushinFRV",
+        "polarisId": "38A89ANqJyN4",
+        "region": "Americas",
+        "char": "Dragunov",
+        "dan": "God of Destruction I",
+        "tekkenPower": 362742,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "PAC | Kyra",
+        "polarisId": "63JBE9HimGBB",
+        "region": "Americas",
+        "char": "King",
+        "dan": "God of Destruction",
+        "tekkenPower": 417737,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "2026-10-31T23:28:55Z-38A89ANqJyN4-63JBE9HimGBB",
+      "account": "38A89ANqJyN4",
+      "date": "2026-10-31T23:28:55.000Z",
+      "type": "Partida de sala",
+      "stage": "Urban Square Evening",
+      "win": true,
+      "me": {
+        "name": "PAC | BushinFRV",
+        "polarisId": "38A89ANqJyN4",
+        "region": "Americas",
+        "char": "Dragunov",
+        "dan": "God of Destruction I",
+        "tekkenPower": 362742,
+        "rounds": 3
+      },
+      "opp": {
+        "name": "PAC | Kyra",
+        "polarisId": "63JBE9HimGBB",
+        "region": "Americas",
+        "char": "King",
+        "dan": "God of Destruction",
+        "tekkenPower": 417737,
+        "rounds": 2
+      }
+    },
+    {
+      "id": "2026-10-31T23:09:23Z-38A89ANqJyN4-4gyH6MEJai88",
+      "account": "38A89ANqJyN4",
+      "date": "2026-10-31T23:09:23.000Z",
+      "type": "Partida de sala",
+      "stage": "Coliseum of Fate",
+      "win": false,
+      "me": {
+        "name": "PAC | BushinFRV",
+        "polarisId": "38A89ANqJyN4",
+        "region": "Americas",
+        "char": "Dragunov",
+        "dan": "God of Destruction I",
+        "tekkenPower": 362742,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "PAC | Perdes",
+        "polarisId": "4gyH6MEJai88",
+        "region": "Americas",
+        "char": "King",
+        "dan": "God of Destruction II",
+        "tekkenPower": 381126,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "2026-10-31T23:06:58Z-38A89ANqJyN4-4gyH6MEJai88",
+      "account": "38A89ANqJyN4",
+      "date": "2026-10-31T23:06:58.000Z",
+      "type": "Partida de sala",
+      "stage": "Coliseum of Fate",
+      "win": false,
+      "me": {
+        "name": "PAC | BushinFRV",
+        "polarisId": "38A89ANqJyN4",
+        "region": "Americas",
+        "char": "Dragunov",
+        "dan": "God of Destruction I",
+        "tekkenPower": 362742,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "PAC | Perdes",
+        "polarisId": "4gyH6MEJai88",
+        "region": "Americas",
+        "char": "King",
+        "dan": "God of Destruction II",
+        "tekkenPower": 381126,
+        "rounds": 3
+      }
+    },
     {
       "id": "2026-10-30T18:07:31Z-38A89ANqJyN4-4gyH6MEJai88",
       "account": "38A89ANqJyN4",
@@ -201,7 +435,7 @@
         "rounds": 3
       },
       "opp": {
-        "name": "PAC | Sleepman",
+        "name": "AntilopesHunter",
         "polarisId": "42diB7bqTNJJ",
         "region": "Americas",
         "char": "Kazuya",
@@ -227,7 +461,7 @@
         "rounds": 3
       },
       "opp": {
-        "name": "PAC | Sleepman",
+        "name": "AntilopesHunter",
         "polarisId": "42diB7bqTNJJ",
         "region": "Americas",
         "char": "Kazuya",
@@ -253,7 +487,7 @@
         "rounds": 2
       },
       "opp": {
-        "name": "PAC | Sleepman",
+        "name": "AntilopesHunter",
         "polarisId": "42diB7bqTNJJ",
         "region": "Americas",
         "char": "Dragunov",
@@ -279,7 +513,7 @@
         "rounds": 0
       },
       "opp": {
-        "name": "PAC | Sleepman",
+        "name": "AntilopesHunter",
         "polarisId": "42diB7bqTNJJ",
         "region": "Americas",
         "char": "Dragunov",
@@ -643,7 +877,7 @@
         "rounds": 3
       },
       "opp": {
-        "name": "PAC | Sleepman",
+        "name": "AntilopesHunter",
         "polarisId": "42diB7bqTNJJ",
         "region": "Americas",
         "char": "Dragunov",
@@ -669,7 +903,7 @@
         "rounds": 3
       },
       "opp": {
-        "name": "PAC | Sleepman",
+        "name": "AntilopesHunter",
         "polarisId": "42diB7bqTNJJ",
         "region": "Americas",
         "char": "Dragunov",
