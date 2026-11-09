@@ -1,7 +1,111 @@
 {
-  "updatedAt": "2026-11-09T06:36:41.814Z",
-  "count": 217,
+  "updatedAt": "2026-11-09T22:24:17.847Z",
+  "count": 221,
   "battles": [
+    {
+      "id": "2026-11-08T21:29:36Z-4QqQEdgAA6Gj-38A89ANqJyN4",
+      "account": "38A89ANqJyN4",
+      "date": "2026-11-08T21:29:36.000Z",
+      "type": "Partida em grupo",
+      "stage": "Baobab Horizon",
+      "win": false,
+      "me": {
+        "name": "PAC | BushinFRV",
+        "polarisId": "38A89ANqJyN4",
+        "region": "Americas",
+        "char": "Dragunov",
+        "dan": "God of Destruction I",
+        "tekkenPower": 362742,
+        "rounds": 0
+      },
+      "opp": {
+        "name": "Stargazer",
+        "polarisId": "4QqQEdgAA6Gj",
+        "region": "Americas",
+        "char": "Lee",
+        "dan": "God of Destruction II",
+        "tekkenPower": 375927,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "2026-11-08T21:27:23Z-4QqQEdgAA6Gj-38A89ANqJyN4",
+      "account": "38A89ANqJyN4",
+      "date": "2026-11-08T21:27:23.000Z",
+      "type": "Partida em grupo",
+      "stage": "Rebel Hangar",
+      "win": false,
+      "me": {
+        "name": "PAC | BushinFRV",
+        "polarisId": "38A89ANqJyN4",
+        "region": "Americas",
+        "char": "Dragunov",
+        "dan": "God of Destruction I",
+        "tekkenPower": 362742,
+        "rounds": 2
+      },
+      "opp": {
+        "name": "Stargazer",
+        "polarisId": "4QqQEdgAA6Gj",
+        "region": "Americas",
+        "char": "Lee",
+        "dan": "God of Destruction II",
+        "tekkenPower": 375927,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "2026-11-08T21:10:48Z-38A89ANqJyN4-33Jt3MaJMyEf",
+      "account": "38A89ANqJyN4",
+      "date": "2026-11-08T21:10:48.000Z",
+      "type": "Partida em grupo",
+      "stage": "Pacman Map",
+      "win": false,
+      "me": {
+        "name": "PAC | BushinFRV",
+        "polarisId": "38A89ANqJyN4",
+        "region": "Americas",
+        "char": "Dragunov",
+        "dan": "God of Destruction I",
+        "tekkenPower": 362742,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "VIPERS|Gdtme01",
+        "polarisId": "33Jt3MaJMyEf",
+        "region": "Americas",
+        "char": "Jack-8",
+        "dan": "God of Destruction IV",
+        "tekkenPower": 386157,
+        "rounds": 3
+      }
+    },
+    {
+      "id": "2026-11-08T21:08:13Z-38A89ANqJyN4-33Jt3MaJMyEf",
+      "account": "38A89ANqJyN4",
+      "date": "2026-11-08T21:08:13.000Z",
+      "type": "Partida em grupo",
+      "stage": "Urban Square Evening",
+      "win": false,
+      "me": {
+        "name": "PAC | BushinFRV",
+        "polarisId": "38A89ANqJyN4",
+        "region": "Americas",
+        "char": "Dragunov",
+        "dan": "God of Destruction I",
+        "tekkenPower": 362742,
+        "rounds": 1
+      },
+      "opp": {
+        "name": "VIPERS|Gdtme01",
+        "polarisId": "33Jt3MaJMyEf",
+        "region": "Americas",
+        "char": "Jack-8",
+        "dan": "God of Destruction IV",
+        "tekkenPower": 386157,
+        "rounds": 3
+      }
+    },
     {
       "id": "2026-11-04T02:27:24Z-38A89ANqJyN4-4gyH6MEJai88",
       "account": "38A89ANqJyN4",
